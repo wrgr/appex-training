@@ -1,18 +1,31 @@
 ---
 ---
+// --- FIX ---
+// 1. Define colors as Sass variables so they can be used by Sass functions.
+$primary-color-sass:    #2563eb;
+$secondary-color-sass:  #0f172a;
+$accent-color-sass:     #f59e0b;
+$success-color-sass:    #10b981;
+$danger-color-sass:     #ef4444;
 
+// Sass variables for dark mode text
+$dark-mode-text-primary: #f8fafc;
+$dark-mode-text-secondary: #cbd5e1;
+
+// Now, import other files which might use these Sass variables
 @import "base";
 @import "layout";
 @import "components";
 
-// CSS custom properties
+// --- ORIGINAL CODE (MODIFIED) ---
+// 2. Use the Sass variables above to create your CSS custom properties.
 :root {
-  --primary-color: #2563eb;
-  --secondary-color: #0f172a;
-  --accent-color: #f59e0b;
-  --success-color: #10b981;
-  --warning-color: #f59e0b;
-  --danger-color: #ef4444;
+  --primary-color: #{$primary-color-sass};
+  --secondary-color: #{$secondary-color-sass};
+  --accent-color: #{$accent-color-sass};
+  --success-color: #{$success-color-sass};
+  --warning-color: #{$accent-color-sass}; // Re-using accent color for warning
+  --danger-color: #{$danger-color-sass};
   
   --text-primary: #0f172a;
   --text-secondary: #64748b;
@@ -38,8 +51,8 @@
 // Dark mode
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-primary: #f8fafc;
-    --text-secondary: #cbd5e1;
+    --text-primary: #{$dark-mode-text-primary};
+    --text-secondary: #{$dark-mode-text-secondary};
     --text-muted: #64748b;
     
     --bg-primary: #0f172a;
