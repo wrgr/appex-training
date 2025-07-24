@@ -1,0 +1,52 @@
+title: APPEX Training Guide
+description: An Interdisciplinary Approach to Pandemic Science
+url: "https://yourusername.github.io"
+baseurl: "/appex-training-guide"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation
+header_pages:
+  - foundation/index.md
+  - archetypes/index.md
+  - scenarios/index.md
+  - references/index.md
+
+# Collections
+collections:
+  archetypes:
+    output: true
+    permalink: /:collection/:name/
+  notebooks:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "archetypes"
+      type: "pages"
+    values:
+      layout: "archetype"
+  - scope:
+      path: "notebooks"
+      type: "pages"
+    values:
+      layout: "notebook"
+
+# Custom variables
+appex:
+  version: "1.0"
+  authors: "APPEX Research Team"
