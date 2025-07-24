@@ -44,7 +44,8 @@ a {
   transition: var(--transition);
   
   &:hover {
-    color: darken(var(--primary-color), 10%);
+    // --- FIX --- Use the Sass variable for the darken() function
+    color: darken($primary-color-sass, 10%);
     text-decoration: underline;
   }
 }
