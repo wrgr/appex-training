@@ -28,7 +28,8 @@
   color: white;
   
   &:hover {
-    background-color: darken(var(--primary-color), 10%);
+    // --- FIX --- Use the Sass variable for the darken() function
+    background-color: darken($primary-color-sass, 10%);
     color: white;
   }
 }
