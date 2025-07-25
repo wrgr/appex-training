@@ -273,9 +273,11 @@ ul, ol {
   }
 }
 
-// NARRATIVE PAGE STYLES - Clean and minimal
+// Replace the NARRATIVE PAGE STYLES section in your main.scss with this:
+
+// NARRATIVE PAGE STYLES - Much improved layout
 .narrative-page {
-  max-width: 800px;
+  max-width: 900px; // Wider for better readability
   margin: 0 auto;
   padding: var(--space-2xl);
   background: var(--bg-primary);
@@ -285,63 +287,116 @@ ul, ol {
   
   @media (max-width: 768px) {
     padding: var(--space-lg);
-    margin: var(--space-md);
+    margin: var(--space-sm);
+    max-width: calc(100% - 2rem); // Full width on mobile with margins
   }
 
+  // Main title
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: var(--text-primary);
     font-weight: 800;
+    line-height: 1.2;
     
     @media (max-width: 768px) {
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
   }
 
+  // Byline
   .byline {
     text-align: center;
     font-style: italic;
     color: var(--text-muted);
     margin-bottom: 3rem;
     font-size: 1.1rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 2rem;
   }
 
+  // Chapter headings (h2)
   h2 {
     color: var(--text-primary);
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-    font-size: 1.8rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
     font-weight: 700;
-    border-bottom: 2px solid var(--primary-blue);
-    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--primary-blue);
+    padding-bottom: 0.75rem;
+    
+    &:first-of-type {
+      margin-top: 2rem;
+    }
+    
+    @media (max-width: 768px) {
+      font-size: 1.6rem;
+      margin-top: 3rem;
+    }
   }
 
+  // Section headings (h3)
   h3 {
     color: var(--primary-blue);
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
     font-weight: 600;
+    border-left: 4px solid var(--secondary-teal);
+    padding-left: 1rem;
+    
+    @media (max-width: 768px) {
+      font-size: 1.3rem;
+    }
   }
 
+  // Sub-section headings (h4)
   h4 {
     color: var(--text-primary);
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
     font-weight: 600;
   }
 
+  // Paragraphs - Much better readability
   p {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
+    font-size: 1.1rem; // Bigger text
+    line-height: 1.8; // More line spacing
+    margin-bottom: 1.8rem; // More space between paragraphs
     color: var(--text-secondary);
-    text-align: left;
+    text-align: left; // Left align is easier to read than justified
+    
+    @media (max-width: 768px) {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
   }
 
+  // Special paragraph types
+  p:first-of-type {
+    font-size: 1.15rem; // Slightly larger first paragraph
+    font-weight: 500;
+  }
+
+  // Location/time stamps
+  p strong:first-child {
+    display: block;
+    color: var(--primary-blue);
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius);
+    border-left: 3px solid var(--accent-orange);
+  }
+
+  // Emphasis styling
   strong {
     color: var(--text-primary);
     font-weight: 600;
@@ -352,13 +407,16 @@ ul, ol {
     font-style: italic;
   }
 
-  ol {
+  // Lists - Better spacing
+  ol, ul {
     margin: 2rem 0;
+    padding-left: 2.5rem;
     
     li {
-      margin-bottom: 1rem;
-      line-height: 1.6;
+      margin-bottom: 1.2rem;
+      line-height: 1.7;
       color: var(--text-secondary);
+      font-size: 1.05rem;
       
       strong {
         color: var(--text-primary);
@@ -367,20 +425,141 @@ ul, ol {
       em {
         color: var(--primary-blue);
       }
+      
+      // Nested lists
+      ol, ul {
+        margin: 1rem 0;
+        
+        li {
+          margin-bottom: 0.8rem;
+          font-size: 1rem;
+        }
+      }
     }
   }
 
+  // Blockquotes
   blockquote {
     background: var(--bg-secondary);
     border-left: 4px solid var(--primary-blue);
-    padding: 1.5rem;
-    margin: 2rem 0;
+    padding: 2rem;
+    margin: 3rem 0;
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    font-style: italic;
     
     p {
       margin-bottom: 0;
       color: var(--text-primary);
-      font-style: italic;
+      font-size: 1.1rem;
+    }
+  }
+
+  // Appendix sections
+  h2:contains("Appendix"),
+  h2[id*="appendix"] {
+    margin-top: 5rem;
+    color: var(--accent-orange);
+    border-bottom-color: var(--accent-orange);
+    
+    &:before {
+      content: "📚 ";
+      margin-right: 0.5rem;
+    }
+  }
+
+  // Bibliography styling
+  h3:contains("Bibliography"),
+  h3[id*="bibliography"] {
+    color: var(--accent-orange);
+    border-left-color: var(--accent-orange);
+  }
+
+  // Reference numbers
+  sup {
+    color: var(--primary-blue);
+    font-weight: 600;
+  }
+
+  // Links within narrative
+  a {
+    color: var(--primary-blue);
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-teal);
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--secondary-teal);
+      text-decoration-color: var(--primary-blue);
+    }
+  }
+
+  // Chapter breaks - visual separation
+  hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--primary-blue), transparent);
+    margin: 4rem 0;
+  }
+
+  // Special highlighted sections
+  .highlight {
+    background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--accent-orange);
+    padding: 2rem;
+    margin: 3rem 0;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    
+    h3, h4 {
+      margin-top: 0;
+      color: var(--accent-orange);
+    }
+  }
+
+  // Footer acknowledgment
+  .acknowledgment {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    
+    strong {
+      color: var(--text-primary);
+    }
+  }
+}
+
+// Print styles for narrative
+@media print {
+  .narrative-page {
+    max-width: none;
+    margin: 0;
+    padding: 1rem;
+    box-shadow: none;
+    border: none;
+    background: white;
+    
+    h1, h2, h3, h4 {
+      color: black !important;
+      page-break-after: avoid;
+    }
+    
+    p {
+      color: black !important;
+      orphans: 3;
+      widows: 3;
+    }
+    
+    h2 {
+      page-break-before: always;
+      
+      &:first-of-type {
+        page-break-before: avoid;
+      }
     }
   }
 }
@@ -588,7 +767,7 @@ ul, ol {
 
 .expert-image-container {
   position: relative;
-  height: 240px; // Increased height to show more of the face
+  height: 300px; // Increased height to show more of the face
   overflow: hidden;
   background: var(--bg-secondary); // Fallback background
 
