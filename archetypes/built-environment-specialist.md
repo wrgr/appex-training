@@ -53,7 +53,7 @@ resources: |
 ---
 
 <div class="expert-bio-box">
-  <img src="../assets/images/bisma-khan.png" alt="Portrait of Dr. Bisma Khan" class="expert-photo">
+  <img src="../../assets/images/bisma-khan.png" alt="Portrait of Dr. Bisma Khan" class="expert-photo">
   <div class="expert-details">
     <h4>Meet the Expert: <strong>Dr. Bisma Khan</strong></h4>
     <p>

@@ -1,6 +1,11 @@
+---
+layout: default
+title: Pandemic Response Archetypes
+---
+
 # Pandemic Response Archetypes
 
-![Our Expert Team](../../assets/images/appex.png)
+![Our Expert Team](../assets/images/appex.png)
 *Our interdisciplinary team of pandemic response experts representing six critical domains of expertise*
 
 ## Introduction
