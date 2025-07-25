@@ -310,6 +310,59 @@ layout: default
     animation: fadeInUp 0.8s ease-out;
 }
 
+/* Logo section */
+.logo-section {
+    text-align: center;
+    margin: var(--space-2xl) 0;
+    padding: var(--space-xl);
+    background: var(--bg-primary);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+}
+
+.appex-logo {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: var(--space-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.contact-info {
+    font-size: 1.1rem;
+    color: var(--primary-blue);
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+}
+
+.contact-info a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-info a:hover {
+    color: var(--secondary-teal);
+    text-decoration: underline;
+}
+
+/* NSF acknowledgment */
+.nsf-acknowledgment {
+    background: var(--bg-secondary);
+    border-left: 4px solid var(--accent-orange);
+    padding: var(--space-lg);
+    margin: var(--space-2xl) 0;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+.nsf-acknowledgment strong {
+    color: var(--text-primary);
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -353,6 +406,24 @@ layout: default
     
     .components-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .appex-logo {
+        max-width: 250px;
+    }
+    
+    .logo-section {
+        padding: var(--space-lg);
+        margin: var(--space-lg) 0;
+    }
+    
+    .contact-info {
+        font-size: 1rem;
+    }
+    
+    .nsf-acknowledgment {
+        font-size: 0.9rem;
+        padding: var(--space-md);
     }
 }
 
@@ -465,4 +536,15 @@ layout: default
     </div>
 </div>
 
-<!-- Add your archetype cards here -->
+<!-- Logo and Contact Section -->
+<section class="logo-section fade-in-up">
+    <img src="{{ '/assets/images/appex-logo.png' | relative_url }}" alt="APPEX Logo" class="appex-logo">
+    <div class="contact-info">
+        <a href="mailto:contact@appex.org">contact@appex.org</a>
+    </div>
+</section>
+
+<!-- NSF Acknowledgment -->
+<section class="nsf-acknowledgment">
+    <p><strong>Acknowledgment:</strong> This material is based upon work supported by the National Science Foundation under Award No. 2412115. Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.</p>
+</section>
