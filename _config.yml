@@ -20,8 +20,9 @@ plugins:
 header_pages:
   - foundation/index.md
   - archetypes/index.md
-  - scenarios/index.md
+  - advanced/index.md
   - references/index.md
+  - external-link.md
 
 # Collections
 collections:

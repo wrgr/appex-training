@@ -1,624 +1,1289 @@
-markdown---
+---
 layout: default
 title: Foundation Modules
 ---
 
-## Part 2: Foundational Science Modules
-
-### 2.1 Essential Epidemiological Terminology
-
-**Understanding Basic Reproduction Number (R₀)**
-
-The basic reproduction number is perhaps the most important concept in epidemic science. It answers the question: "In a completely susceptible population, how many people will one infected person infect on average?"
-
-**Mathematical Definition:**
-R₀ = (probability of transmission per contact) × (number of contacts per unit time) × (duration of infectiousness)
-
-**Practical Interpretation:**
-- **R₀ < 1**: Each infected person infects less than one other person → Disease dies out
-- **R₀ = 1**: Each infected person infects exactly one other person → Endemic equilibrium
-- **R₀ > 1**: Each infected person infects more than one other person → Epidemic growth
-
-**Real-World Examples:**
-- Measles: R₀ = 12-18 (highly contagious, airborne)
-- COVID-19 (original): R₀ = 2.5-3.0 (respiratory droplets)
-- COVID-19 (Delta): R₀ = 5-9 (increased transmissibility)
-- Seasonal flu: R₀ = 1.3 (lower transmission rate)
-- SARS: R₀ = 2-3 (similar to COVID but contained)
-
-**🔗 Interactive Learning:**
-- [R₀ Calculator by Gabriel Goh](https://gabgoh.github.io/COVID/index.html) - Adjust parameters and see epidemic curves
-- [CDC's R₀ Explanation](https://www.cdc.gov/csels/dsepd/ss1978/lesson1/section11.html) - Detailed epidemiological perspective
-- [Our World in Data: R₀ Estimates](https://ourworldindata.org/covid-reproduction-rate) - Current R₀ tracking for COVID-19
-
-**Effective Reproduction Number (Rt)**
-
-While R₀ assumes everyone is susceptible, Rt reflects reality:
-Rt = R₀ × (fraction of population still susceptible)
-
-As immunity builds through infection or vaccination, Rt decreases. When Rt < 1, the epidemic declines.
-
-**Key Factors Affecting Rt:**
-- Population immunity levels (natural infection + vaccination)
-- Behavioral changes (social distancing, mask wearing)
-- Seasonal effects (indoor vs. outdoor activities)
-- New variants with different transmissibility
-- Public health interventions (contact tracing, isolation)
-
-**Attack Rate and Population Impact**
-
-Attack rate = (Number of people who became ill) / (Number of people at risk) × 100
-
-**Examples from Recent Pandemics:**
-- 1918 Flu: ~25% global attack rate
-- 2009 H1N1: ~11-21% attack rate in first year
-- COVID-19: Varies by location (5-70% depending on interventions)
-
-**Attack rates vary by:**
-- Age groups (children often higher for respiratory diseases)
-- Occupation (healthcare workers, essential workers)
-- Geographic location (urban vs. rural)
-- Socioeconomic status (housing density, job flexibility)
-
-**Case Fatality Rate (CFR) vs. Infection Fatality Rate (IFR)**
-
-This distinction became crucial during COVID-19:
-
-**CFR = Deaths among confirmed cases / Total confirmed cases × 100**
-- Depends on testing capacity and strategy
-- Often overestimates true mortality early in pandemics
-- Useful for hospital planning and clinical management
-
-**IFR = Deaths among all infected / Total infected (including undetected) × 100**
-- Requires serological surveys or modeling
-- Better estimate of true disease severity
-- Important for policy decisions about interventions
-
-**COVID-19 Example:**
-- Early CFR: 3-4% (limited testing)
-- Estimated IFR: 0.5-1.0% (including asymptomatic cases)
-- Age-stratified IFR: <0.1% (under 50) to >5% (over 70)
-
-**Herd Immunity Threshold**
-
-**Formula: HIT = 1 - (1/R₀)**
-
-**Disease Examples:**
-- Measles (R₀=15): HIT = 93% - Explains why measles outbreaks occur when vaccination drops below ~95%
-- COVID-19 (R₀=3): HIT = 67% - But variants with higher R₀ increase this threshold
-- Influenza (R₀=1.3): HIT = 23% - Seasonal patterns affect this calculation
-
-**🔗 Learning Resources:**
-- [Vaccine Confidence Project](https://www.vaccineconfidence.org/) - Monitoring global attitudes toward vaccines
-- [Herd Immunity Calculator](https://www.omnicalculator.com/health/herd-immunity) - Interactive threshold calculator
-- [Our World in Data: Vaccination Progress](https://ourworldindata.org/covid-vaccinations) - Real-time vaccination tracking
-
-### 2.2 Natural History and Progression of Epidemics
-
-**Epidemic Progression Framework: From Infection to Pandemic**
-
-Understanding how diseases escalate helps us know when and how to respond:
-
-**Stage 1: Sporadic Cases**
-- Individual infections with no clear pattern
-- May be imported cases from other regions
-- No evidence of local transmission
-- **Example**: First COVID-19 cases in Wuhan (December 2019)
-
-**Stage 2: Outbreak**
-- Cases exceed expected baseline for the population, time, and place
-- Clear epidemiological links between cases
-- Geographic clustering evident
-- **WHO Definition**: "The occurrence of disease cases in excess of normal expectancy"
-- **Example**: SARS outbreak in Amoy Gardens, Hong Kong (2003)
-
-**Stage 3: Epidemic**
-- Widespread occurrence within a community or region
-- Sustained person-to-person transmission
-- Cases not directly linked to index case or common source
-- **Example**: MERS-CoV outbreak in South Korea (2015)
-
-**Stage 4: Pandemic**
-- Worldwide spread across multiple countries/continents
-- Sustained transmission in multiple regions
-- WHO may declare Public Health Emergency of International Concern (PHEIC)
-- **Example**: COVID-19 declared pandemic March 11, 2020
-
-**🔗 Real-Time Tracking:**
-- [WHO Disease Outbreak News](https://www.who.int/emergencies/disease-outbreak-news) - Current global outbreaks
-- [ProMED-mail](https://promedmail.org/) - Program for Monitoring Emerging Diseases
-- [HealthMap](https://www.healthmap.org/en/) - Real-time disease surveillance
-
-**Epidemic Curve Analysis: Reading the Story of an Outbreak**
-
-Epidemic curves (epi curves) show the number of cases over time and reveal the outbreak's source and transmission pattern.
-
-**Point Source Outbreak**
-- **Shape**: Rapid rise to peak, then gradual decline
-- **Timeframe**: Cases occur within one incubation period
-- **Cause**: Single exposure event
-- **Example**: Food poisoning at wedding reception
-
-**Characteristics:**
-- Sharp peak
-- Cases cluster around exposure time + incubation period
-- No secondary cases from person-to-person transmission
-- Duration = range of incubation periods
-
-**Real Example**: 1993 E. coli outbreak linked to hamburgers
-- Exposure: Contaminated meat at restaurant chain
-- Peak: 3-4 days after exposure
-- Duration: ~10 days total
-
-**Continuous Common Source Outbreak**
-- **Shape**: Plateau or fluctuating pattern
-- **Timeframe**: Cases continue as long as exposure continues
-- **Cause**: Ongoing exposure to contaminated source
-- **Example**: Contaminated water supply
-
-**Characteristics:**
-- Cases rise to plateau level
-- May have fluctuations based on exposure intensity
-- Cases stop when source is removed
-- No person-to-person spread pattern
-
-**Real Example**: 1993 Cryptosporidium outbreak in Milwaukee
-- Source: Contaminated municipal water supply
-- Pattern: High plateau lasting weeks
-- Resolution: When water treatment improved
-
-**Propagated (Progressive) Source Outbreak**
-- **Shape**: Series of progressively larger peaks
-- **Timeframe**: Peaks separated by incubation period
-- **Cause**: Person-to-person transmission
-- **Example**: Respiratory virus outbreak
-
-**Characteristics:**
-- Multiple peaks, each ~1 incubation period apart
-- Each successive peak may be larger (if R₀ > 1)
-- Pattern continues until intervention or population immunity
-- Classic pattern for pandemic diseases
-
-**Real Example**: COVID-19 waves
-- Multiple peaks separated by ~2-4 weeks
-- Successive waves influenced by variants, seasonality, interventions
-- Global pattern shows regional progression
-
-**Mixed Outbreak Patterns**
-Many real outbreaks combine elements:
-- Point source followed by person-to-person spread
-- Multiple point sources
-- Seasonal patterns affecting transmission
-
-**🔗 Interactive Tools:**
-- [CDC Epi Curve Tutorial](https://www.cdc.gov/training/quicklearns/epiconf/) - Interactive learning module
-- [Epi Curve Analysis Tool](https://www.cdc.gov/foodsafety/outbreaks/investigating-outbreaks/epi-curves.html) - CDC's practical guide
-- [OpenEpi Epidemic Calculator](https://www.openepi.com/EpiCalc/EpiCalc.htm) - Statistical analysis tools
-
-**Seasonal Patterns and Disease Emergence**
-
-**Respiratory Disease Seasonality:**
-- **Winter peaks**: Influenza, RSV, common cold viruses
-- **Factors**: Indoor crowding, lower humidity, vitamin D deficiency
-- **COVID-19**: Clear seasonal signal emerged after initial pandemic phase
-
-**Vector-Borne Disease Seasonality:**
-- **Summer peaks**: Malaria, dengue, Zika, West Nile virus
-- **Factors**: Vector breeding cycles, temperature effects on transmission
-- **Climate change**: Expanding geographic and temporal windows
-
-**Foodborne Disease Patterns:**
-- **Summer peaks**: Bacterial foodborne illness (warmer temperatures)
-- **Holiday clusters**: Gathering-associated outbreaks
-- **Agricultural cycles**: Fresh produce contamination patterns
-
-### 2.3 Classical Epidemic Models and Modern Applications
-
-**The SIR Model: Foundation of Epidemic Modeling**
-
-Developed by Kermack and McKendrick in 1927, the SIR model remains the foundation of epidemic modeling.
-
-**Population Compartments:**
-- **S**: Susceptible individuals who can become infected
-- **I**: Infected individuals who can transmit the disease
-- **R**: Recovered (or removed) individuals who are immune or deceased
-
-**Mathematical Framework:**
-```
-dS/dt = -βSI/N
-dI/dt = βSI/N - γI  
-dR/dt = γI
-```
-
-**Parameter Definitions:**
-- **β (beta)**: Transmission rate - contacts per time × probability of transmission per contact
-- **γ (gamma)**: Recovery rate = 1/(infectious period)
-- **N**: Total population size
-- **R₀ = β/γ**: Basic reproduction number
-
-**Key Insights from SIR Model:**
-1. **Epidemic threshold**: Epidemic occurs when S₀ > γ/β (or R₀ > 1)
-2. **Final epidemic size**: Not everyone gets infected, even without intervention
-3. **Peak timing**: Depends on R₀ and initial conditions
-4. **Herd immunity**: Epidemic ends when S < γ/β
-
-**🔗 Interactive SIR Models:**
-- [Washington Post: Epidemic Simulator](https://www.washingtonpost.com/graphics/2020/world/corona-simulator/) - Visual explanation
-- [3Blue1Brown: Exponential Growth](https://www.youtube.com/watch?v=Kas0tIxDvrg) - Mathematical intuition
-- [EpiModel R Package](http://www.epimodel.org/) - Professional modeling tools
-
-**SEIR Model: Adding Realism with Incubation Period**
-
-Many diseases have an incubation period where individuals are infected but not yet infectious.
-
-**Additional Compartment:**
-- **E**: Exposed individuals (infected but not yet infectious)
-
-**Mathematical Framework:**
-```
-dS/dt = -βSI/N
-dE/dt = βSI/N - σE
-dI/dt = σE - γI
-dR/dt = γI
-```
-
-**New Parameter:**
-- **σ (sigma)**: Rate of becoming infectious = 1/(incubation period)
-
-**When to Use SEIR:**
-- Diseases with significant incubation periods (COVID-19, influenza, measles)
-- Policy modeling (latent period affects intervention timing)
-- Contact tracing analysis (exposed individuals need monitoring)
-
-**SEIR Applications:**
-- **COVID-19 modeling**: 5-day average incubation period
-- **Intervention timing**: Shows why early action is crucial
-- **Contact tracing**: Models effectiveness of finding exposed individuals
-
-**Model Extensions and Modern Applications**
-
-**SIRS Model: Waning Immunity**
-Adds return from R to S compartment for diseases with temporary immunity:
-- Seasonal influenza (immunity wanes, antigenic drift)
-- Common cold coronaviruses
-- Some bacterial infections
-
-**Age-Structured Models**
-Divide population by age groups with different:
-- Contact patterns (children vs. adults vs. elderly)
-- Disease severity (COVID-19 age gradient)
-- Vaccination priorities
-
-**Network Models**
-Account for heterogeneous mixing:
-- Social networks determine who contacts whom
-- Superspreading events and superspreaders
-- Geographic spread patterns
-
-**Stochastic Models**
-Include randomness in transmission:
-- Small outbreak extinction probability
-- Variability in epidemic size and timing
-- Uncertainty quantification
-
-**Agent-Based Models**
-Track individual agents with:
-- Detailed behaviors and characteristics
-- Spatial movement patterns
-- Intervention compliance heterogeneity
-
-**🔗 Advanced Modeling Resources:**
-- [Imperial College COVID-19 Reports](https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/) - Policy-relevant modeling
-- [Institute for Disease Modeling](https://www.idmod.org/) - Global health modeling
-- [COVID-19 Scenario Hub](https://covid19scenariomodelinghub.org/) - Collaborative forecasting
-- [R Epidemics Consortium (RECON)](https://www.repidemicsconsortium.org/) - Open-source epidemic analysis tools
-
-### 2.4 Historical Case Studies with Multidisciplinary Lessons
-
-**Spanish Flu (1918-1920): Lessons in Pandemic Response**
-
-The 1918 influenza pandemic remains the most devastating pandemic in recorded history, offering crucial lessons for modern pandemic preparedness.
-
-**Key Statistics:**
-- **Global impact**: 500 million infected (1/3 of world population)
-- **Mortality**: 50-100 million deaths worldwide
-- **Unique pattern**: High mortality in healthy adults aged 20-40
-- **Waves**: Three distinct waves over two years
-
-**Epidemiological Characteristics:**
-- **R₀ estimate**: 1.8-3.0 (similar to COVID-19)
-- **Case fatality rate**: 2-20% (varied by location and wave)
-- **Seasonality**: Fall 1918 wave most severe
-- **Geographic spread**: Followed trade and military routes
-
-**Multidisciplinary Lessons:**
-
-**Public Health Response:**
-- **Non-pharmaceutical interventions (NPIs)**: Cities with early, sustained interventions had 50% lower death rates
-- **St. Louis vs. Philadelphia**: Classic comparison showing intervention timing matters
-  - St. Louis: Early school closures, banned gatherings → death rate 2.7 per 1,000
-  - Philadelphia: Delayed response, held parade → death rate 7.6 per 1,000
-- **Intervention fatigue**: Public compliance waned over time
-
-**🔗 Interactive Resources:**
-- [American Experience: The Great Pandemic](https://www.pbs.org/wgbh/americanexperience/features/influenza-pandemic-1918/) - PBS documentary and resources
-- [Stanford History Education Group: 1918 Flu](https://sheg.stanford.edu/history-lessons/spanish-flu) - Primary source analysis
-- [CDC: 1918 Pandemic Historical Timeline](https://www.cdc.gov/flu/pandemic-resources/1918-commemoration/timeline.htm)
-
-**Communication and Social Response:**
-- **Information control**: Government censorship initially downplayed severity
-- **Public trust**: Loss of credibility when reality became apparent
-- **Social breakdown**: Essential services collapsed in hard-hit areas
-- **Behavioral adaptation**: Mask wearing, social distancing became common
-
-**Economic Impact:**
-- **GDP reduction**: 6-8% decline in affected countries
-- **Labor shortage**: High mortality in working-age population
-- **Sectoral effects**: Entertainment, retail severely impacted
-- **Long-term effects**: Survivors had reduced lifetime earnings
-
-**SARS (2003): Success Story in Global Coordination**
-
-The SARS outbreak demonstrated how international cooperation and modern public health tools could contain a novel pathogen.
-
-**Key Statistics:**
-- **Global scope**: 8,098 cases, 774 deaths across 17 countries
-- **Case fatality rate**: ~10% overall, higher in elderly
-- **Duration**: 8 months from first case to WHO declaring end
-- **Economic impact**: $40 billion in lost GDP
-
-**Epidemiological Characteristics:**
-- **R₀ estimate**: 2-3 (without interventions)
-- **Superspreading**: 80% of transmission from 20% of cases
-- **Hospital transmission**: Major amplification sites
-- **No asymptomatic transmission**: Simplified contact tracing
-
-**Success Factors:**
-
-**Rapid Scientific Response:**
-- **Pathogen identification**: Novel coronavirus identified in 2 weeks
-- **Genome sequencing**: Complete sequence shared globally
-- **Diagnostic tests**: PCR tests developed and distributed rapidly
-- **Clinical characterization**: Case definition refined based on evidence
-
-**Global Coordination:**
-- **WHO leadership**: Central coordination of international response
-- **Information sharing**: Real-time data sharing between countries
-- **Travel advisories**: Targeted recommendations for affected areas
-- **Laboratory networks**: Global coordination of testing
-
-**🔗 SARS Resources:**
-- [WHO SARS Archive](https://www.who.int/health-topics/severe-acute-respiratory-syndrome) - Complete WHO response documentation
-- [Nature SARS Collection](https://www.nature.com/collections/adbceafdhf) - Scientific papers from outbreak
-- [CDC SARS Information](https://www.cdc.gov/sars/) - US response and lessons learned
-
-**Public Health Measures:**
-- **Contact tracing**: Extensive tracking of transmission chains
-- **Quarantine**: Large-scale quarantine in affected areas
-- **Infection control**: Hospital protocols prevented further spread
-- **Border screening**: Temperature screening at airports
-
-**Limitations and Lessons:**
-- **Hospital vulnerability**: Initial spread through healthcare systems
-- **Economic overreaction**: Fear-driven economic impacts exceeded health impacts
-- **Preparedness gaps**: Revealed need for better surge capacity
-
-**COVID-19 (2019-present): The Modern Pandemic**
-
-The ongoing COVID-19 pandemic has tested every aspect of global pandemic preparedness and response.
-
-**Key Statistics (as of 2024):**
-- **Global cases**: Over 700 million confirmed cases
-- **Mortality**: Over 7 million deaths reported
-- **Variants**: Multiple variants of concern emerged
-- **Vaccines**: Multiple vaccines developed in record time
-
-**Epidemiological Characteristics:**
-- **R₀ estimates**: 2.5-3.0 (original), 5-9 (Delta), 12-15 (Omicron)
-- **Age stratification**: Strong age gradient in severity
-- **Asymptomatic transmission**: 20-40% of infections asymptomatic
-- **Long COVID**: Persistent symptoms in 10-30% of cases
-
-**Multidisciplinary Innovations:**
-
-**Scientific Breakthroughs:**
-- **mRNA vaccines**: Developed and deployed in less than a year
-- **Genomic surveillance**: Real-time variant tracking globally
-- **Antiviral treatments**: Multiple therapeutic options developed
-- **Rapid diagnostics**: Home testing became widely available
-
-**🔗 COVID-19 Learning Resources:**
-- [Our World in Data: COVID-19](https://ourworldindata.org/covid-deaths) - Comprehensive data dashboard
-- [COVID-19 Scenario Hub](https://covid19scenariomodelinghub.org/) - Modeling forecasts
-- [Johns Hopkins Coronavirus Resource Center](https://coronavirus.jhu.edu/) - Academic analysis
-- [Nature COVID-19 Collection](https://www.nature.com/subjects/covid-19) - Latest research
-
-**Digital Health Innovations:**
-- **Contact tracing apps**: Bluetooth-based exposure notification
-- **Telemedicine**: Rapid adoption of remote healthcare
-- **Vaccine passports**: Digital verification systems
-- **Wastewater surveillance**: Community-level monitoring
-
-**Policy and Social Innovations:**
-- **Lockdown strategies**: Varied approaches across countries
-- **Economic support**: Unprecedented fiscal response
-- **Vaccine equity initiatives**: COVAX and global distribution efforts
-- **Infodemic management**: Combating misinformation at scale
-
-**Ongoing Challenges:**
-- **Vaccine hesitancy**: Complex social and psychological factors
-- **Health equity**: Disproportionate impacts on vulnerable populations
-- **Economic recovery**: Long-term impacts on employment and inequality
-- **Mental health**: Widespread psychological impacts
-
-### 2.5 Modern Surveillance and Early Warning Systems
-
-**Global Surveillance Networks**
-
-**World Health Organization (WHO) Systems:**
-
-**Global Outbreak Alert and Response Network (GOARN)**
-- **Membership**: 200+ technical institutions worldwide
-- **Function**: Rapid verification, risk assessment, and expert deployment
-- **Success**: Deployed to 63 countries for outbreak response
-- **🔗 Learn More**: [GOARN Portal](https://extranet.who.int/goarn/)
-
-**Disease Outbreak News (DON)**
-- **Purpose**: Real-time communication of outbreak events
-- **Frequency**: Weekly updates on significant events
-- **Coverage**: Global scope, all disease types
-- **🔗 Access**: [WHO DON](https://www.who.int/emergencies/disease-outbreak-news)
-
-**Event-Based Surveillance Networks:**
-
-**Global Public Health Intelligence Network (GPHIN)**
-- **Technology**: AI-powered monitoring of online news in 9 languages
-- **Coverage**: 7,000+ sources worldwide
-- **Detection time**: Often identifies outbreaks before official reports
-- **Impact**: First detected SARS, H7N9 influenza, and other outbreaks
-
-**Program for Monitoring Emerging Diseases (ProMED-mail)**
-- **Model**: Email-based reporting system with expert moderation
-- **Reach**: 80,000+ subscribers in 185 countries
-- **Languages**: English, Spanish, Portuguese, French, Russian, Arabic
-- **Impact**: Often first to report emerging disease events
-- **🔗 Subscribe**: [ProMED-mail](https://promedmail.org/)
-
-**HealthMap**
-- **Technology**: Automated web-scraping and machine learning
-- **Sources**: News media, official reports, eyewitness accounts
-- **Visualization**: Real-time global disease mapping
-- **Mobile app**: Available for iOS and Android
-- **🔗 Explore**: [HealthMap.org](https://www.healthmap.org/en/)
-
-**Digital Epidemiology Revolution**
-
-**Syndromic Surveillance**
-Real-time monitoring of health indicators before laboratory confirmation:
-
-**Hospital Emergency Department Surveillance**
-- **Indicators**: Chief complaints, symptoms, drug sales
-- **Examples**: Influenza-like illness (ILI), acute gastroenteritis
-- **Advantages**: Early detection, real-time trends
-- **Limitations**: Low specificity, requires interpretation
-
-**Google Flu Trends and Beyond**
-- **Concept**: Search query patterns predict disease activity
-- **Evolution**: Initial success followed by accuracy challenges
-- **Modern approaches**: More sophisticated algorithms, multiple data streams
-- **Current tools**: FluSight forecasting challenges
-
-**🔗 Syndromic Surveillance Resources:**
-- [CDC NSSP](https://www.cdc.gov/nssp/) - National Syndromic Surveillance Program
-- [ISDS](https://www.syndromic.org/) - International Society for Disease Surveillance
-- [RODS Laboratory](https://rods.health.pitt.edu/) - Real-time surveillance research
-
-**Social Media Monitoring**
-- **Platforms**: Twitter, Facebook, Instagram, Weibo, WhatsApp
-- **Methods**: Natural language processing, sentiment analysis
-- **Applications**: Early outbreak detection, misinformation tracking
-- **Examples**: HealthMap social media monitoring, Epidemic Intelligence from Open Sources (EIOS)
-
-**Genomic Surveillance**
-Real-time pathogen evolution tracking:
-
-**GISAID Platform**
-- **Purpose**: Global sharing of influenza and SARS-CoV-2 sequences
-- **Coverage**: Millions of viral genomes from 180+ countries
-- **Speed**: Sequences available within days of collection
-- **Impact**: Enabled real-time COVID-19 variant tracking
-- **🔗 Access**: [GISAID.org](https://www.gisaid.org/)
-
-**Nextstrain**
-- **Function**: Real-time phylogenetic analysis and visualization
-- **Pathogens**: SARS-CoV-2, influenza, Ebola, Zika, and others
-- **Features**: Interactive evolutionary trees, geographic spread
-- **Open source**: Freely available tools and data
-- **🔗 Explore**: [Nextstrain.org](https://nextstrain.org/)
-
-**Mobile Health Technologies**
-
-**Contact Tracing Applications**
-- **Technology**: Bluetooth Low Energy proximity detection
-- **Privacy approaches**: Centralized vs. decentralized models
-- **Adoption challenges**: Privacy concerns, technical barriers
-- **Effectiveness**: Depends on adoption rates and follow-up
-
-**Symptom Tracking Apps**
-- **Examples**: COVID Symptom Study (King's College London)
-- **Data**: Daily symptom reporting by millions of users
-- **Insights**: Disease progression, vaccine effectiveness, variant impacts
-- **Research value**: Large-scale epidemiological studies
-
-**🔗 Digital Health Resources:**
-- [Apple/Google Exposure Notification](https://www.google.com/covid19/exposurenotifications/) - Technical framework
-- [COVID Symptom Study](https://covid.joinzoe.com/) - Citizen science approach
-- [Digital Contact Tracing Landscape](https://www.ada.gov/) - Accessibility considerations
-
-### 2.6 Environmental and Social Drivers
-
-**Environmental Drivers of Pandemic Risk**
-
-**Deforestation and Habitat Destruction**
-
-**The Spillover Connection:**
-- **Statistics**: 75% of emerging infectious diseases are zoonotic
-- **Mechanism**: Habitat destruction forces wildlife into human contact
-- **Hotspots**: Tropical regions with high biodiversity and deforestation rates
-- **Examples**: West African Ebola linked to forest loss, Nipah virus in Malaysia
-
-**Quantifying the Risk:**
-- **Forest loss**: 10 million hectares lost annually (area of South Korea)
-- **Biodiversity impact**: Species extinction rates 1,000x natural background
-- **Disease emergence**: Strong correlation with deforestation rates
-- **Economic cost**: $1 trillion annually in ecosystem service losses
-
-**🔗 Forest Monitoring Resources:**
-- [Global Forest Watch](https://www.globalforestwatch.org/) - Real-time deforestation tracking
-- [Hansen Global Forest Change](https://earthenginepartners.appspot.com/science-2013-global-forest) - University of Maryland dataset
-- [PRODES Amazon](http://www.obt.inpe.br/OBT/assuntos/programas/amazonia/prodes) - Brazilian Amazon monitoring
-
-**Urbanization and Megacity Challenges**
-
-**Urban Disease Transmission:**
-- **Population density**: Facilitates respiratory disease spread
-- **Transportation hubs**: Airports, subway systems as mixing points
-- **Informal settlements**: Poor sanitation, crowded conditions
-- **Air pollution**: Increases respiratory disease susceptibility
-
-**Global Urbanization Trends:**
-- **Current**: 55% of world population in cities (4.2 billion people)
-- **Projection**: 68% urban by 2050 (6.7 billion people)
-- **Megacities**: 33 cities with >10 million people by 2018
-- **Growth concentration**: 90% of urban growth in Asia and Africa
-
-**Urban Health Vulnerabilities:**
-- **Slum populations**: 1 billion people in informal settlements
-- **Water access**: 2 billion people lack safely managed drinking water
-- **Sanitation**: 3.6 billion lack safely managed sanitation
-- **Air quality**: 90% of urban dwellers breathe polluted air
-
-**🔗 Urban Health Resources:**
-- [UN-Habitat](https://unhabitat.org/) - Urban development and health
-- [Healthy Cities Network](https://www.who.int/healthpromotion/healthy-cities/en/) - WHO initiative
-- [Urban Health Atlas](https://www.who.int/publications/i/item/9789240031029) - Global urban health data
-
-**Globalization and Connectivity**
-
-**Transportation Networks:**
-- **Air travel**: 4.5 billion passengers annually pre-COVID
-- **Speed of spread**: Disease can reach anywhere within 24-36 hours
-- **Hub vulnerability**: Major airports as epidemic amplifiers
-- **Maritime trade**: 11 billion tons of cargo annually, pest introduction
-
-**Digital Connectivity:**
-- **Information spread**: News travels faster than pathogens
-- **Misinformation**: False information can undermine response
-- **Coordination**: Enables global coordination and data sharing
-- **Economic integration**: Supply chain vulnerabilities revealed
-
-**🔗 Global Connectivity Resources:**
-- [IATA Travel Statistics](https://www.iata.org/en/pressroom/pr/2023-03-07-01/) - Aviation data
-- [Our World in Data: Trade](https://ourworldindata.org/trade-and-globalization) - Global trade patterns
-- [IMF Global Financial Stability](https://www.imf.org/en/Publications/GFSR) - Economic connectivity
-
+<style>
+/* Enhanced styles for foundations page */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 24px;
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    animation: float 8s ease-in-out infinite;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #fff, #e3f2fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    z-index: 2;
+}
+
+.page-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+    position: relative;
+    z-index: 2;
+}
+
+.module-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.module-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.module-number {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.module-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 1rem;
+}
+
+.module-description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.content-wrapper {
+    background: white;
+    border-radius: 24px;
+    padding: 3rem;
+    margin: 2rem 0;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.content-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 24px 24px 0 0;
+}
+
+.section {
+    margin: 4rem 0;
+    padding: 3rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-radius: 20px;
+    border-left: 6px solid #667eea;
+    position: relative;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.subsection {
+    margin: 2.5rem 0;
+    padding: 2rem;
+    background: white;
+    border-radius: 16px;
+    border-left: 4px solid #3b82f6;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.subsection h4 {
+    font-size: 1.6rem;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.subsection h5 {
+    font-size: 1.3rem;
+    color: #334155;
+    margin: 1.5rem 0 1rem 0;
+    font-weight: 600;
+}
+
+.subsection p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #475569;
+    margin-bottom: 1.2rem;
+}
+
+.concept-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.concept-box::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #667eea, #764ba2, #667eea);
+    border-radius: 18px;
+    z-index: -1;
+    animation: borderGlow 3s linear infinite;
+}
+
+.concept-box h5 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.concept-box p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.formula-box {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 1rem 0;
+    font-family: 'Courier New', monospace;
+    border-left: 4px solid #3b82f6;
+}
+
+.examples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.example-card {
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.example-card:hover {
+    background: rgba(59, 130, 246, 0.15);
+    transform: translateY(-2px);
+}
+
+.example-card strong {
+    display: block;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.example-card span {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+.interactive-box {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    margin: 2rem 0;
+}
+
+.interactive-box h5 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.interactive-box h5::before {
+    content: '🔗';
+    font-size: 1.2rem;
+}
+
+.resource-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.resource-list li:last-child {
+    border-bottom: none;
+}
+
+.resource-list li::before {
+    content: '🌐';
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+.resource-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.resource-list a:hover {
+    border-bottom-color: white;
+}
+
+.key-points {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    margin: 2rem 0;
+}
+
+.key-points h5 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.key-points h5::before {
+    content: '💡';
+    font-size: 1.2rem;
+}
+
+.points-list {
+    list-style: none;
+    padding: 0;
+}
+
+.points-list li {
+    padding: 0.8rem 0;
+    padding-left: 2rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.points-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.case-study {
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    color: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    margin: 3rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.case-study::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    animation: float 6s ease-in-out infinite;
+}
+
+.case-study-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.case-study-content {
+    position: relative;
+    z-index: 2;
+}
+
+.stats-highlight {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.stat-item {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.timeline {
+    position: relative;
+    margin: 2rem 0;
+    padding-left: 3rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, #667eea, #764ba2);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.5rem;
+    top: 1.5rem;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    border: 3px solid #667eea;
+}
+
+.timeline-year {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+@keyframes borderGlow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 3rem 1.5rem;
+    }
+    
+    .page-title {
+        font-size: 2.2rem;
+    }
+    
+    .content-wrapper {
+        padding: 2rem;
+        margin: 1rem 0;
+    }
+    
+    .module-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .examples-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-highlight {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
+    .timeline {
+        padding-left: 2rem;
+    }
+    
+    .timeline::before {
+        left: 0.5rem;
+    }
+    
+    .timeline-item::before {
+        left: -1.5rem;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .content-wrapper {
+        background: #1a1a1a;
+        color: #e2e8f0;
+    }
+    
+    .section {
+        background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    }
+    
+    .subsection {
+        background: #2d3748;
+        color: #e2e8f0;
+    }
+    
+    .example-card {
+        background: rgba(59, 130, 246, 0.2);
+        color: #e2e8f0;
+    }
+}
+</style>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <h1 class="page-title">🧬 Foundation Modules</h1>
+    <p class="page-subtitle">Essential concepts and tools for understanding pandemic science</p>
+    
+    <div class="module-grid">
+        <div class="module-card">
+            <div class="module-number">2.1</div>
+            <div class="module-title">Essential Epidemiological Terminology</div>
+            <div class="module-description">Master the fundamental concepts that drive pandemic analysis</div>
+        </div>
+        <div class="module-card">
+            <div class="module-number">2.2</div>
+            <div class="module-title">Natural History & Progression</div>
+            <div class="module-description">Understand how diseases evolve from isolated cases to pandemics</div>
+        </div>
+        <div class="module-card">
+            <div class="module-number">2.3</div>
+            <div class="module-title">Classical Epidemic Models</div>
+            <div class="module-description">Mathematical frameworks for predicting disease spread</div>
+        </div>
+        <div class="module-card">
+            <div class="module-number">2.4</div>
+            <div class="module-title">Historical Case Studies</div>
+            <div class="module-description">Multidisciplinary lessons from past pandemics</div>
+        </div>
+        <div class="module-card">
+            <div class="module-number">2.5</div>
+            <div class="module-title">Surveillance & Early Warning</div>
+            <div class="module-description">Modern systems for detecting emerging threats</div>
+        </div>
+        <div class="module-card">
+            <div class="module-number">2.6</div>
+            <div class="module-title">Environmental & Social Drivers</div>
+            <div class="module-description">The broader context that shapes pandemic risk</div>
+        </div>
+    </div>
+</section>
+
+<div class="content-wrapper">
+    
+    ## Part 2: Foundational Science Modules
+
+    <div class="section">
+        <h3 class="section-title">📊 2.1 Essential Epidemiological Terminology</h3>
+        <p class="section-subtitle">Master the fundamental concepts that drive pandemic analysis</p>
+
+        <div class="subsection">
+            <h4>🎯 Understanding Basic Reproduction Number (R₀)</h4>
+            
+            <p>The basic reproduction number is perhaps the most important concept in epidemic science. It answers the question: <strong>"In a completely susceptible population, how many people will one infected person infect on average?"</strong></p>
+
+            <div class="formula-box">
+                <strong>Mathematical Definition:</strong><br>
+                R₀ = (probability of transmission per contact) × (number of contacts per unit time) × (duration of infectiousness)
+            </div>
+
+            <div class="key-points">
+                <h5>Practical Interpretation</h5>
+                <ul class="points-list">
+                    <li><strong>R₀ < 1:</strong> Each infected person infects less than one other person → Disease dies out</li>
+                    <li><strong>R₀ = 1:</strong> Each infected person infects exactly one other person → Endemic equilibrium</li>
+                    <li><strong>R₀ > 1:</strong> Each infected person infects more than one other person → Epidemic growth</li>
+                </ul>
+            </div>
+
+            <h5>Real-World Examples</h5>
+            <div class="examples-grid">
+                <div class="example-card">
+                    <strong>Measles</strong>
+                    <span>R₀ = 12-18 (highly contagious, airborne)</span>
+                </div>
+                <div class="example-card">
+                    <strong>COVID-19 (original)</strong>
+                    <span>R₀ = 2.5-3.0 (respiratory droplets)</span>
+                </div>
+                <div class="example-card">
+                    <strong>COVID-19 (Delta)</strong>
+                    <span>R₀ = 5-9 (increased transmissibility)</span>
+                </div>
+                <div class="example-card">
+                    <strong>Seasonal flu</strong>
+                    <span>R₀ = 1.3 (lower transmission rate)</span>
+                </div>
+                <div class="example-card">
+                    <strong>SARS</strong>
+                    <span>R₀ = 2-3 (similar to COVID but contained)</span>
+                </div>
+            </div>
+
+            <div class="interactive-box">
+                <h5>Interactive Learning</h5>
+                <ul class="resource-list">
+                    <li><a href="https://gabgoh.github.io/COVID/index.html">R₀ Calculator by Gabriel Goh</a> - Adjust parameters and see epidemic curves</li>
+                    <li><a href="https://www.cdc.gov/csels/dsepd/ss1978/lesson1/section11.html">CDC's R₀ Explanation</a> - Detailed epidemiological perspective</li>
+                    <li><a href="https://ourworldindata.org/covid-reproduction-rate">Our World in Data: R₀ Estimates</a> - Current R₀ tracking for COVID-19</li>
+                </ul>
+            </div>
+
+            <h5>Effective Reproduction Number (Rt)</h5>
+            <p>While R₀ assumes everyone is susceptible, Rt reflects reality:</p>
+            
+            <div class="formula-box">
+                Rt = R₀ × (fraction of population still susceptible)
+            </div>
+
+            <p>As immunity builds through infection or vaccination, Rt decreases. When Rt < 1, the epidemic declines.</p>
+
+            <div class="concept-box">
+                <h5>Key Factors Affecting Rt</h5>
+                <p>Population immunity levels (natural infection + vaccination), behavioral changes (social distancing, mask wearing), seasonal effects (indoor vs. outdoor activities), new variants with different transmissibility, and public health interventions (contact tracing, isolation).</p>
+            </div>
+        </div>
+
+        <div class="subsection">
+            <h4>📈 Attack Rate and Population Impact</h4>
+            
+            <div class="formula-box">
+                Attack rate = (Number of people who became ill) / (Number of people at risk) × 100
+            </div>
+
+            <h5>Examples from Recent Pandemics</h5>
+            <div class="examples-grid">
+                <div class="example-card">
+                    <strong>1918 Flu</strong>
+                    <span>~25% global attack rate</span>
+                </div>
+                <div class="example-card">
+                    <strong>2009 H1N1</strong>
+                    <span>~11-21% attack rate in first year</span>
+                </div>
+                <div class="example-card">
+                    <strong>COVID-19</strong>
+                    <span>Varies by location (5-70% depending on interventions)</span>
+                </div>
+            </div>
+
+            <div class="key-points">
+                <h5>Attack rates vary by</h5>
+                <ul class="points-list">
+                    <li>Age groups (children often higher for respiratory diseases)</li>
+                    <li>Occupation (healthcare workers, essential workers)</li>
+                    <li>Geographic location (urban vs. rural)</li>
+                    <li>Socioeconomic status (housing density, job flexibility)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="subsection">
+            <h4>💀 Case Fatality Rate (CFR) vs. Infection Fatality Rate (IFR)</h4>
+            
+            <p>This distinction became crucial during COVID-19:</p>
+
+            <div class="concept-box">
+                <h5>CFR = Deaths among confirmed cases / Total confirmed cases × 100</h5>
+                <p>Depends on testing capacity and strategy. Often overestimates true mortality early in pandemics. Useful for hospital planning and clinical management.</p>
+            </div>
+
+            <div class="concept-box">
+                <h5>IFR = Deaths among all infected / Total infected (including undetected) × 100</h5>
+                <p>Requires serological surveys or modeling. Better estimate of true disease severity. Important for policy decisions about interventions.</p>
+            </div>
+
+            <h5>COVID-19 Example</h5>
+            <div class="examples-grid">
+                <div class="example-card">
+                    <strong>Early CFR</strong>
+                    <span>3-4% (limited testing)</span>
+                </div>
+                <div class="example-card">
+                    <strong>Estimated IFR</strong>
+                    <span>0.5-1.0% (including asymptomatic cases)</span>
+                </div>
+                <div class="example-card">
+                    <strong>Age-stratified IFR</strong>
+                    <span><0.1% (under 50) to >5% (over 70)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="subsection">
+            <h4>🛡️ Herd Immunity Threshold</h4>
+            
+            <div class="formula-box">
+                <strong>Formula:</strong> HIT = 1 - (1/R₀)
+            </div>
+
+            <h5>Disease Examples</h5>
+            <div class="examples-grid">
+                <div class="example-card">
+                    <strong>Measles (R₀=15)</strong>
+                    <span>HIT = 93% - Explains why measles outbreaks occur when vaccination drops below ~95%</span>
+                </div>
+                <div class="example-card">
+                    <strong>COVID-19 (R₀=3)</strong>
+                    <span>HIT = 67% - But variants with higher R₀ increase this threshold</span>
+                </div>
+                <div class="example-card">
+                    <strong>Influenza (R₀=1.3)</strong>
+                    <span>HIT = 23% - Seasonal patterns affect this calculation</span>
+                </div>
+            </div>
+
+            <div class="interactive-box">
+                <h5>Learning Resources</h5>
+                <ul class="resource-list">
+                    <li><a href="https://www.vaccineconfidence.org/">Vaccine Confidence Project</a> - Monitoring global attitudes toward vaccines</li>
+                    <li><a href="https://www.omnicalculator.com/health/herd-immunity">Herd Immunity Calculator</a> - Interactive threshold calculator</li>
+                    <li><a href="https://ourworldindata.org/covid-vaccinations">Our World in Data: Vaccination Progress</a> - Real-time vaccination tracking</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">📈 2.2 Natural History and Progression of Epidemics</h3>
+        <p class="section-subtitle">Understanding how diseases evolve from isolated cases to pandemics</p>
+
+        <div class="subsection">
+            <h4>🔄 Epidemic Progression Framework: From Infection to Pandemic</h4>
+            
+            <p>Understanding how diseases escalate helps us know when and how to respond:</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">Stage 1: Sporadic Cases</div>
+                    <div class="timeline-content">
+                        Individual infections with no clear pattern. May be imported cases from other regions. No evidence of local transmission.
+                        <br><strong>Example:</strong> First COVID-19 cases in Wuhan (December 2019)
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">Stage 2: Outbreak</div>
+                    <div class="timeline-content">
+                        Cases exceed expected baseline for the population, time, and place. Clear epidemiological links between cases. Geographic clustering evident.
+                        <br><strong>Example:</strong> SARS outbreak in Amoy Gardens, Hong Kong (2003)
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">Stage 3: Epidemic</div>
+                    <div class="timeline-content">
+                        Widespread occurrence within a community or region. Sustained person-to-person transmission. Cases not directly linked to index case or common source.
+                        <br><strong>Example:</strong> MERS-CoV outbreak in South Korea (2015)
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">Stage 4: Pandemic</div>
+                    <div class="timeline-content">
+                        Worldwide spread across multiple countries/continents. Sustained transmission in multiple regions. WHO may declare Public Health Emergency of International Concern (PHEIC).
+                        <br><strong>Example:</strong> COVID-19 declared pandemic March 11, 2020
+                    </div>
+                </div>
+            </div>
+
+            <div class="interactive-box">
+                <h5>Real-Time Tracking</h5>
+                <ul class="resource-list">
+                    <li><a href="https://www.who.int/emergencies/disease-outbreak-news">WHO Disease Outbreak News</a> - Current global outbreaks</li>
+                    <li><a href="https://promedmail.org/">ProMED-mail</a> - Program for Monitoring Emerging Diseases</li>
+                    <li><a href="https://www.healthmap.org/en/">HealthMap</a> - Real-time disease surveillance</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="subsection">
+            <h4>📊 Epidemic Curve Analysis: Reading the Story of an Outbreak</h4>
+            
+            <p>Epidemic curves (epi curves) show the number of cases over time and reveal the outbreak's source and transmission pattern.</p>
+
+            <div class="concept-box">
+                <h5>Point Source Outbreak</h5>
+                <p><strong>Shape:</strong> Rapid rise to peak, then gradual decline<br>
+                <strong>Timeframe:</strong> Cases occur within one incubation period<br>
+                <strong>Cause:</strong> Single exposure event<br>
+                <strong>Example:</strong> Food poisoning at wedding reception</p>
+            </div>
+
+            <div class="concept-box">
+                <h5>Continuous Common Source Outbreak</h5>
+                <p><strong>Shape:</strong> Plateau or fluctuating pattern<br>
+                <strong>Timeframe:</strong> Cases continue as long as exposure continues<br>
+                <strong>Cause:</strong> Ongoing exposure to contaminated source<br>
+                <strong>Example:</strong> Contaminated water supply</p>
+            </div>
+
+            <div class="concept-box">
+                <h5>Propagated (Progressive) Source Outbreak</h5>
+                <p><strong>Shape:</strong> Series of progressively larger peaks<br>
+                <strong>Timeframe:</strong> Peaks separated by incubation period<br>
+                <strong>Cause:</strong> Person-to-person transmission<br>
+                <strong>Example:</strong> Respiratory virus outbreak</p>
+            </div>
+
+            <div class="interactive-box">
+                <h5>Interactive Tools</h5>
+                <ul class="resource-list">
+                    <li><a href="https://www.cdc.gov/training/quicklearns/epiconf/">CDC Epi Curve Tutorial</a> - Interactive learning module</li>
+                    <li><a href="https://www.cdc.gov/foodsafety/outbreaks/investigating-outbreaks/epi-curves.html">Epi Curve Analysis Tool</a> - CDC's practical guide</li>
+                    <li><a href="https://www.openepi.com/EpiCalc/EpiCalc.htm">OpenEpi Epidemic Calculator</a> - Statistical analysis tools</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="subsection">
+            <h4>🌍 Seasonal Patterns and Disease Emergence</h4>
+            
+            <div class="examples-grid">
+                <div class="example-card">
+                    <strong>Respiratory Disease Seasonality</strong>
+                    <span>Winter peaks: Influenza, RSV, common cold viruses. Factors: Indoor crowding, lower humidity, vitamin D deficiency</span>
+                </div>
+                <div class="example-card">
+                    <strong>Vector-Borne Disease Seasonality</strong>
+                    <span>Summer peaks: Malaria, dengue, Zika, West Nile virus. Factors: Vector breeding cycles, temperature effects</span>
+                </div>
+                <div class="example-card">
+                    <strong>Foodborne Disease Patterns</strong>
+                    <span>Summer peaks: Bacterial foodborne illness. Holiday clusters: Gathering-associated outbreaks</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">🧮 2.3 Classical Epidemic Models and Modern Applications</h3>
+        <p class="section-subtitle">Mathematical frameworks for predicting disease spread</p>
+
+        <div class="subsection">
+            <h4>📐 The SIR Model: Foundation of Epidemic Modeling</h4>
+            
+            <p>Developed by Kermack and McKendrick in 1927, the SIR model remains the foundation of epidemic modeling.</p>
+
+            <div class="concept-box">
+                <h5>Population Compartments</h5>
+                <p><strong>S:</strong> Susceptible individuals who can become infected<br>
+                <strong>I:</strong> Infected individuals who can transmit the disease<br>
+                <strong>R:</strong> Recovered (or removed) individuals who are immune or deceased</p>
+            </div>
+
+            <div class="formula-box">
+                <strong>Mathematical Framework:</strong><br>
+                dS/dt = -βSI/N<br>
+                dI/dt = βSI/N - γI<br>
+                dR/dt = γI
+            </div>
+
+            <div class="key-points">
+                <h5>Parameter Definitions</h5>
+                <ul class="points-list">
+                    <li><strong>β (beta):</strong> Transmission rate - contacts per time × probability of transmission per contact</li>
+                    <li><strong>γ (gamma):</strong> Recovery rate = 1/(infectious period)</li>
+                    <li><strong>N:</strong> Total population size</li>
+                    <li><strong>R₀ = β/γ:</strong> Basic reproduction number</li>
+                </ul>
+            </div>
+
+            <div class="concept-box">
+                <h5>Key Insights from SIR Model</h5>
+                <p>1. <strong>Epidemic threshold:</strong> Epidemic occurs when S₀ > γ/β (or R₀ > 1)<br>
+                2. <strong>Final epidemic size:</strong> Not everyone gets infected, even without intervention<br>
+                3. <strong>Peak timing:</strong> Depends on R₀ and initial conditions<br>
+                4. <strong>Herd immunity:</strong> Epidemic ends when S < γ/β</p>
+            </div>
+
+            <div class="interactive-box">
+                <h5>Interactive SIR Models</h5>
+                <ul class="resource-list">
+                    <li><a href="https://www.washingtonpost.com/graphics/2020/world/corona-simulator/">Washington Post: Epidemic Simulator</a> - Visual explanation</li>
+                    <li><a href="https://www.youtube.com/watch?v=Kas0tIxDvrg">3Blue1Brown: Exponential Growth</a> - Mathematical intuition</li>
+                    <li><a href="http://www.epimodel.org/">EpiModel R Package</a> - Professional modeling tools</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="subsection">
+            <h4>🔄 SEIR Model: Adding Realism with Incubation Period</h4>
+            
+            <p>Many diseases have an incubation period where individuals are infected but not yet infectious.</p>
+
+            <div class="concept-box">
+                <h5>Additional Compartment</h5>
+                <p><strong>E:</strong> Exposed individuals (infected but not yet infectious)</p>
+            </div>
+
+            <div class="formula-box">
+                <strong>Mathematical Framework:</strong><br>
+                dS/dt = -βSI/N<br>
+                dE/dt = βSI/N - σE<br>
+                dI/dt = σE - γI<br>
+                dR/dt = γI
+            </div>
+
+            <div class="key-points">
+                <h5>When to Use SEIR</h5>
+                <ul class="points-list">
+                    <li>Diseases with significant incubation periods (COVID-19, influenza, measles)</li>
+                    <li>Policy modeling (latent period affects intervention timing)</li>
+                    <li>Contact tracing analysis (exposed individuals need monitoring)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="subsection">
+            <h4>🚀 Model Extensions and Modern Applications</h4>
+            
+            <div class="examples-grid">
+                <div class="example-card">
+                    <strong>SIRS Model</strong>
+                    <span>Waning Immunity - Adds return from R to S compartment for seasonal influenza, common cold coronaviruses</span>
+                </div>
+                <div class="example-card">
+                    <strong>Age-Structured Models</strong>
+                    <span>Different contact patterns, disease severity, and vaccination priorities by age group</span>
+                </div>
+                <div class="example-card">
+                    <strong>Network Models</strong>
+                    <span>Account for heterogeneous mixing, superspreading events, geographic spread patterns</span>
+                </div>
+                <div class="example-card">
+                    <strong>Stochastic Models</strong>
+                    <span>Include randomness in transmission, small outbreak extinction probability, uncertainty quantification</span>
+                </div>
+                <div class="example-card">
+                    <strong>Agent-Based Models</strong>
+                    <span>Track individual agents with detailed behaviors, spatial movement, intervention compliance</span>
+                </div>
+            </div>
+
+            <div class="interactive-box">
+                <h5>Advanced Modeling Resources</h5>
+                <ul class="resource-list">
+                    <li><a href="https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/">Imperial College COVID-19 Reports</a> - Policy-relevant modeling</li>
+                    <li><a href="https://www.idmod.org/">Institute for Disease Modeling</a> - Global health modeling</li>
+                    <li><a href="https://covid19scenariomodelinghub.org/">COVID-19 Scenario Hub</a> - Collaborative forecasting</li>
+                    <li><a href="https://www.repidemicsconsortium.org/">R Epidemics Consortium (RECON)</a> - Open-source epidemic analysis tools</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">📚 2.4 Historical Case Studies with Multidisciplinary Lessons</h3>
+        <p class="section-subtitle">Learning from past pandemics to inform future preparedness</p>
+
+        <div class="case-study">
+            <h4 class="case-study-title">🦠 Spanish Flu (1918-1920): Lessons in Pandemic Response</h4>
+            <div class="case-study-content">
+                <p>The 1918 influenza pandemic remains the most devastating pandemic in recorded history, offering crucial lessons for modern pandemic preparedness.</p>
+                
+                <div class="stats-highlight">
+                    <div class="stat-item">
+                        <div class="stat-value">500M</div>
+                        <div class="stat-label">Infected (1/3 of world population)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">50-100M</div>
+                        <div class="stat-label">Deaths worldwide</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">1.8-3.0</div>
+                        <div class="stat-label">R₀ estimate (similar to COVID-19)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">3</div>
+                        <div class="stat-label">Distinct waves over two years</div>
+                    </div>
+                </div>
+
+                <div class="concept-box">
+                    <h5>Multidisciplinary Lessons</h5>
+                    <p><strong>St. Louis vs. Philadelphia:</strong> Classic comparison showing intervention timing matters. St. Louis had early school closures and banned gatherings → death rate 2.7 per 1,000. Philadelphia delayed response and held parade → death rate 7.6 per 1,000.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="case-study">
+            <h4 class="case-study-title">🔬 SARS (2003): Success Story in Global Coordination</h4>
+            <div class="case-study-content">
+                <p>The SARS outbreak demonstrated how international cooperation and modern public health tools could contain a novel pathogen.</p>
+                
+                <div class="stats-highlight">
+                    <div class="stat-item">
+                        <div class="stat-value">8,098</div>
+                        <div class="stat-label">Total cases across 17 countries</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">774</div>
+                        <div class="stat-label">Deaths (~10% CFR)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">8</div>
+                        <div class="stat-label">Months from first case to containment</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">$40B</div>
+                        <div class="stat-label">Lost GDP</div>
+                    </div>
+                </div>
+
+                <div class="key-points">
+                    <h5>Success Factors</h5>
+                    <ul class="points-list">
+                        <li><strong>Rapid Scientific Response:</strong> Novel coronavirus identified in 2 weeks, complete genome sequenced and shared globally</li>
+                        <li><strong>Global Coordination:</strong> WHO leadership, real-time data sharing, targeted travel advisories</li>
+                        <li><strong>Public Health Measures:</strong> Extensive contact tracing, large-scale quarantine, improved infection control</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="case-study">
+            <h4 class="case-study-title">🌍 COVID-19 (2019-present): The Modern Pandemic</h4>
+            <div class="case-study-content">
+                <p>The ongoing COVID-19 pandemic has tested every aspect of global pandemic preparedness and response.</p>
+                
+                <div class="stats-highlight">
+                    <div class="stat-item">
+                        <div class="stat-value">700M+</div>
+                        <div class="stat-label">Confirmed cases globally</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">7M+</div>
+                        <div class="stat-label">Reported deaths</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">12-15</div>
+                        <div class="stat-label">R₀ estimate for Omicron variant</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value"><1 Year</div>
+                        <div class="stat-label">mRNA vaccine development time</div>
+                    </div>
+                </div>
+
+                <div class="key-points">
+                    <h5>Multidisciplinary Innovations</h5>
+                    <ul class="points-list">
+                        <li><strong>Scientific Breakthroughs:</strong> mRNA vaccines, real-time genomic surveillance, multiple therapeutic options</li>
+                        <li><strong>Digital Health:</strong> Contact tracing apps, telemedicine, vaccine passports, wastewater surveillance</li>
+                        <li><strong>Policy Innovations:</strong> Varied lockdown strategies, unprecedented fiscal response, global vaccine equity initiatives</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="interactive-box">
+            <h5>Historical Case Study Resources</h5>
+            <ul class="resource-list">
+                <li><a href="https://www.pbs.org/wgbh/americanexperience/features/influenza-pandemic-1918/">American Experience: The Great Pandemic</a> - PBS documentary and resources</li>
+                <li><a href="https://www.who.int/health-topics/severe-acute-respiratory-syndrome">WHO SARS Archive</a> - Complete WHO response documentation</li>
+                <li><a href="https://ourworldindata.org/covid-deaths">Our World in Data: COVID-19</a> - Comprehensive data dashboard</li>
+                <li><a href="https://www.nature.com/subjects/covid-19">Nature COVID-19 Collection</a> - Latest research</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">🔍 2.5 Modern Surveillance and Early Warning Systems</h3>
+        <p class="section-subtitle">Technology and networks for detecting emerging threats</p>
+
+        <div class="subsection">
+            <h4>🌐 Global Surveillance Networks</h4>
+            
+            <div class="examples-grid">
+                <div class="example-card">
+                    <strong>WHO GOARN</strong>
+                    <span>200+ technical institutions worldwide. Rapid verification, risk assessment, and expert deployment. Deployed to 63 countries.</span>
+                </div>
+                <div class="example-card">
+                    <strong>GPHIN</strong>
+                    <span>AI-powered monitoring of online news in 9 languages. 7,000+ sources worldwide. First detected SARS, H7N9 influenza.</span>
+                </div>
+                <div class="example-card">
+                    <strong>ProMED-mail</strong>
+                    <span>Email-based reporting system with expert moderation. 80,000+ subscribers in 185 countries. Often first to report emerging events.</span>
+                </div>
+                <div class="example-card">
+                    <strong>HealthMap</strong>
+                    <span>Automated web-scraping and machine learning. Real-time global disease mapping. Mobile app available.</span>
+                </div>
+            </div>
+
+            <div class="interactive-box">
+                <h5>Global Surveillance Resources</h5>
+                <ul class="resource-list">
+                    <li><a href="https://extranet.who.int/goarn/">GOARN Portal</a> - WHO Global Outbreak Alert and Response Network</li>
+                    <li><a href="https://www.who.int/emergencies/disease-outbreak-news">WHO Disease Outbreak News</a> - Weekly outbreak updates</li>
+                    <li><a href="https://promedmail.org/">ProMED-mail</a> - Expert-moderated disease surveillance</li>
+                    <li><a href="https://www.healthmap.org/en/">HealthMap.org</a> - Real-time disease mapping</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="subsection">
+            <h4>📱 Digital Epidemiology Revolution</h4>
+            
+            <div class="concept-box">
+                <h5>Syndromic Surveillance</h5>
+                <p>Real-time monitoring of health indicators before laboratory confirmation. Examples include hospital emergency department surveillance, influenza-like illness tracking, and analysis of drug sales patterns.</p>
+            </div>
+
+            <div class="concept-box">
+                <h5>Social Media Monitoring</h5>
+                <p>Natural language processing and sentiment analysis of platforms like Twitter, Facebook, WeChat, and WhatsApp for early outbreak detection and misinformation tracking.</p>
+            </div>
+
+            <div class="concept-box">
+                <h5>Genomic Surveillance</h5>
+                <p>Real-time pathogen evolution tracking through platforms like GISAID (millions of viral genomes from 180+ countries) and Nextstrain (real-time phylogenetic analysis and visualization).</p>
+            </div>
+
+            <div class="interactive-box">
+                <h5>Digital Surveillance Tools</h5>
+                <ul class="resource-list">
+                    <li><a href="https://www.cdc.gov/nssp/">CDC NSSP</a> - National Syndromic Surveillance Program</li>
+                    <li><a href="https://www.gisaid.org/">GISAID.org</a> - Global sharing of viral sequences</li>
+                    <li><a href="https://nextstrain.org/">Nextstrain.org</a> - Real-time phylogenetic analysis</li>
+                    <li><a href="https://covid.joinzoe.com/">COVID Symptom Study</a> - Citizen science approach</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="subsection">
+            <h4>📲 Mobile Health Technologies</h4>
+            
+            <div class="examples-grid">
+                <div class="example-card">
+                    <strong>Contact Tracing Apps</strong>
+                    <span>Bluetooth Low Energy proximity detection. Privacy approaches: centralized vs. decentralized models.</span>
+                </div>
+                <div class="example-card">
+                    <strong>Symptom Tracking Apps</strong>
+                    <span>Daily symptom reporting by millions of users. Large-scale epidemiological studies on disease progression.</span>
+                </div>
+                <div class="example-card">
+                    <strong>Wastewater Surveillance</strong>
+                    <span>Community-level monitoring through sewage analysis. Early warning system for population-level infections.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">🌍 2.6 Environmental and Social Drivers</h3>
+        <p class="section-subtitle">The broader context that shapes pandemic risk</p>
+
+        <div class="subsection">
+            <h4>🌳 Environmental Drivers of Pandemic Risk</h4>
+            
+            <div class="concept-box">
+                <h5>Deforestation and Habitat Destruction</h5>
+                <p><strong>The Spillover Connection:</strong> 75% of emerging infectious diseases are zoonotic. Habitat destruction forces wildlife into human contact, with tropical regions being hotspots due to high biodiversity and deforestation rates.</p>
+            </div>
+
+            <div class="stats-highlight">
+                <div class="stat-item">
+                    <div class="stat-value">10M</div>
+                    <div class="stat-label">Hectares of forest lost annually</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">1000x</div>
+                    <div class="stat-label">Current extinction rate vs. natural background</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">$1T</div>
+                    <div class="stat-label">Annual ecosystem service losses</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">75%</div>
+                    <div class="stat-label">Emerging diseases that are zoonotic</div>
+                </div>
+            </div>
+
+            <div class="interactive-box">
+                <h5>Forest Monitoring Resources</h5>
+                <ul class="resource-list">
+                    <li><a href="https://www.globalforestwatch.org/">Global Forest Watch</a> - Real-time deforestation tracking</li>
+                    <li><a href="https://earthenginepartners.appspot.com/science-2013-global-forest">Hansen Global Forest Change</a> - University of Maryland dataset</li>
+                    <li><a href="http://www.obt.inpe.br/OBT/assuntos/programas/amazonia/prodes">PRODES Amazon</a> - Brazilian Amazon monitoring</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="subsection">
+            <h4>🏙️ Urbanization and Megacity Challenges</h4>
+            
+            <div class="concept-box">
+                <h5>Urban Disease Transmission</h5>
+                <p>Population density facilitates respiratory disease spread. Transportation hubs serve as mixing points. Informal settlements have poor sanitation and crowded conditions. Air pollution increases respiratory disease susceptibility.</p>
+            </div>
+
+            <div class="stats-highlight">
+                <div class="stat-item">
+                    <div class="stat-value">55%</div>
+                    <div class="stat-label">Current world population in cities</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">68%</div>
+                    <div class="stat-label">Projected urban population by 2050</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">33</div>
+                    <div class="stat-label">Cities with >10 million people</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">1B</div>
+                    <div class="stat-label">People in informal settlements</div>
+                </div>
+            </div>
+
+            <div class="key-points">
+                <h5>Urban Health Vulnerabilities</h5>
+                <ul class="points-list">
+                    <li>2 billion people lack safely managed drinking water</li>
+                    <li>3.6 billion lack safely managed sanitation</li>
+                    <li>90% of urban dwellers breathe polluted air</li>
+                    <li>1 billion people live in informal settlements</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="subsection">
+            <h4>🌐 Globalization and Connectivity</h4>
+            
+            <div class="examples-grid">
+                <div class="example-card">
+                    <strong>Transportation Networks</strong>
+                    <span>4.5 billion passengers annually pre-COVID. Disease can reach anywhere within 24-36 hours. Major airports as epidemic amplifiers.</span>
+                </div>
+                <div class="example-card">
+                    <strong>Digital Connectivity</strong>
+                    <span>Information spreads faster than pathogens. Enables global coordination and data sharing. Misinformation can undermine response.</span>
+                </div>
+                <div class="example-card">
+                    <strong>Economic Integration</strong>
+                    <span>11 billion tons of maritime cargo annually. Supply chain vulnerabilities revealed during COVID-19. Economic concerns can delay response.</span>
+                </div>
+            </div>
+
+            <div class="interactive-box">
+                <h5>Global Connectivity Resources</h5>
+                <ul class="resource-list">
+                    <li><a href="https://www.iata.org/en/pressroom/pr/2023-03-07-01/">IATA Travel Statistics</a> - Aviation data and trends</li>
+                    <li><a href="https://ourworldindata.org/trade-and-globalization">Our World in Data: Trade</a> - Global trade patterns</li>
+                    <li><a href="https://unhabitat.org/">UN-Habitat</a> - Urban development and health</li>
+                    <li><a href="https://www.who.int/healthpromotion/healthy-cities/en/">Healthy Cities Network</a> - WHO initiative</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Add your next sections here -->

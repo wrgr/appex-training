@@ -1,3 +1,81 @@
+### Learn the Basics
+
+**🌍 World Health Organization (WHO)**
+- [Disease Outbreaks](https://www.who.int/emergencies/disease-outbreak-news) - Current outbreak tracking and response
+- [Health Emergency Programme](https://www.who.int/emergencies/overview) - Global health security framework
+- [International Health Regulations (2005)](https://www.who.int/publications/i/item/9789241580496) - Legal framework for epidemic response
+- [Epidemic Intelligence from Open Sources](https://www.who.int/eios) - Real-time event detection system
+
+**🏥 Centers for Disease Control and Prevention (CDC)**
+- [Principles of Epidemiology](https://www.cdc.gov/csels/dsepd/ss1978/index.html) - Self-study course in epidemiology
+- [Epidemic Intelligence Service](https://www.cdc.gov/eis/) - Disease detective training program
+- [MMWR (Morbidity and Mortality Weekly Report)](https://www.cdc.gov/mmwr/) - Weekly epidemiological reports
+- [Public Health 101 Series](https://www.cdc.gov/training/publichealth101/index.html) - Foundational public health concepts
+
+**🔴 International Federation of Red Cross (IFRC)**
+- [Epidemic and Pandemic Preparedness](https://www.ifrc.org/our-work/disasters-climate-and-crises/what-disaster/epidemic-pandemic-preparedness) - Community-based response
+- [Understanding Epidemics Guide](https://www.ifrc.org/document/understanding-epidemics-guide-communities) - Practical community guide
+- [Risk Communication Toolkit](https://www.ifrc.org/document/epidemic-and-pandemic-preparedness-guidance-note-risk-communication-and-community) - Communication strategies
+
+**📚 Academic and Scientific Resources**
+- [Nature Medicine: Infectious Disease](https://www.nature.com/nm/browse/infectious-disease) - Latest research developments
+- [The Lancet Infectious Diseases](https://www.thelancet.com/journals/laninf/home) - Clinical and epidemiological research
+- [PLOS Medicine](https://journals.plos.org/plosmedicine/) - Open-access medical research
+- [Emerging Infectious Diseases (EID)](https://wwwnc.cdc.gov/eid/) - CDC's peer-reviewed journal
+
+### Online Training Courses (Free)
+
+**🎓 Coursera**
+- [Epidemics - the Dynamics of Infectious Diseases](https://www.coursera.org/learn/epidemics) - University of Pennsylvania (Free audit)
+- [Fighting COVID-19 with Epidemiology](https://www.coursera.org/learn/covid19-epidemiology) - Imperial College London
+- [The Science of Well-Being during COVID-19](https://www.coursera.org/learn/covid-wellbeing) - Yale University
+- [COVID-19 Contact Tracing](https://www.coursera.org/learn/covid-19-contact-tracing) - Johns Hopkins University
+
+**📖 edX**
+- [Introduction to Global Health](https://www.edx.org/course/introduction-to-global-health) - University of Copenhagen
+- [Pandemic Preparedness](https://www.edx.org/course/pandemic-preparedness) - Harvard University
+- [Data Science for COVID-19](https://www.edx.org/course/data-science-for-covid-19) - University of Michigan
+- [Global Health Security](https://www.edx.org/course/global-health-security) - Georgetown University
+
+**🌐 FutureLearn**
+- [COVID-19: Pandemics, Modelling and Policy](https://www.futurelearn.com/courses/covid-19-pandemics-modelling-policy) - King's College London
+- [Understanding Child Development](https://www.futurelearn.com/courses/childcare-development) - Leeds Beckett University
+- [Pandemic Preparedness](https://www.futurelearn.com/courses/pandemic-preparedness) - University of Edinburgh
+
+**🎥 YouTube Educational Channels**
+- [3Blue1Brown: Exponential Growth and Epidemics](https://www.youtube.com/watch?v=Kas0tIxDvrg) - Mathematical visualization
+- [Crash Course: Public Health](https://www.youtube.com/playlist?list=PL8dPuuaLjXtPqJLK_ktVbgaXzeGm8WSNs) - Public health fundamentals
+- [TED-Ed: How Pandemics Spread](https://www.youtube.com/watch?v=Rpj0emEGShQ) - Animated explanations
+- [World Health Organization](https://www.youtube.com/user/who) - Official WHO educational content
+
+### Interactive Learning Resources
+
+**🔢 Mathematical Modeling Tools**
+- [Epidemic Calculator](https://gabgoh.github.io/COVID/index.html) - Interactive SEIR model by Gabriel Goh
+- [COVID-19 Scenarios](https://covid19-scenarios.org/) - Epidemiological scenario modeling
+- [Our World in Data: Pandemic Modeling](https://ourworldindata.org/covid-models) - Model comparison and explanation
+- [EpiModel Gallery](http://www.epimodel.org/gallery.html) - Network-based epidemic modeling examples
+
+**📊 Data Visualization and Dashboards**
+- [Johns Hopkins COVID-19 Dashboard](https://coronavirus.jhu.edu/map.html) - Real-time global tracking
+- [Our World in Data: Pandemics](https://ourworldindata.org/pandemics) - Historical pandemic data
+- [HealthMap](https://www.healthmap.org/en/) - Disease outbreak monitoring
+- [GISAID](https://www.gisaid.org/) - Genomic epidemiology platform
+
+**🧪 Simulation and Gaming**
+- [Plague Inc.](https://www.ndemiccreations.com/en/22-plague-inc) - Disease spread simulation game
+- [Pandemic: The Board Game](https://www.zmangames.com/en/games/pandemic/) - Cooperative strategy game
+- [CDC Solve the Outbreak](https://www.cdc.gov/mobile/applications/sto/web-app.html) - Disease detective challenges
+- [Foldit](https://fold.it/portal/) - Protein folding puzzle game
+
+**📱 Mobile Apps and Tools**
+- [Epi Info](https://www.cdc.gov/epiinfo/pc.html) - CDC's epidemiological analysis software
+- [R for Epidemiology](https://www.r4epi.com/) - R programming for epidemiological analysis
+- [OpenEpi](https://www.openepi.com/Menu/OE_Menu.htm) - Open-source epidemiological calculator
+- [Contact Tracing Apps Repository](https://github.com/LivePersonNY/WebRTC-Troubleshooting) - Technical implementations
+
+
+
 # Thematically Organized Reference Summaries
 
 *Note: Descriptions below are from novel context and should be regenerated based on actual paper content.*
