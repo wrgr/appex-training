@@ -126,3 +126,49 @@ header {
 .hero-card .card-action {
     margin-top: 20px; // Adds space above the button/link
 }
+
+// --- Narrative Page Styles ---
+
+.narrative-page {
+  max-width: 800px;
+  margin: 40px auto; // Center the content on the page
+  padding: 20px;
+  background-color: #fdfdfd; // A slightly off-white for a softer look
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.narrative-page h1 {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 2.8em;
+  text-align: center;
+  margin-bottom: 0.5em;
+  color: #2a2a2a;
+}
+
+.narrative-page .byline {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 3em;
+}
+
+.narrative-page p {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.1em;
+  line-height: 1.8;
+  text-indent: 2em; /* Indent the first line of each paragraph */
+  margin-bottom: 1.5em;
+}
+
+.narrative-page p:first-of-type {
+    text-indent: 0; /* No indent for the very first paragraph */
+}
+
+.narrative-page p:first-of-type::first-letter {
+    font-size: 3em; /* Creates a "drop cap" for the first letter */
+    float: left;
+    line-height: 1;
+    margin-right: 0.1em;
+    color: #0056b3;
+}

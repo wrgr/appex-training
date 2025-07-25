@@ -1,35 +1,15 @@
 
+---
+title: "The Narrative"
+layout: default 
+---
+
+<div class="narrative-page">
+
+# The Chimera Pandemic
 
 
-
-
-The Chimera Pandemic
-
-
-
-
-The APPEX Project
-appex.org
-
-
-
-© 2025 CC-BY-NC
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-This material is based upon work supported by the National Science Foundation under Award No. 2412115. Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. Foundation models were used as a creative partner in this work.  
-Please let us know if any typos or corrections are needed.
+<p class="byline">The APPEX Project appex.org</p>
 
 
 Chapter 1: Emergence
@@ -477,5 +457,20 @@ Theme 4: Connecting to the Real World
 3.	The shift to aerosol transmission in Chapter 4 is a turning point. Research the work of Dr. Lydia Bourouiba on the physics of coughs and sneezes. How has her research changed our understanding of how diseases spread?
 4.	The APPEX project's goal is to create a new, more adaptable science of pandemic response. Based on the story and your own ideas, what do you think should be the top three priorities for preventing the next pandemic?
  
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+This material is based upon work supported by the National Science Foundation under Award No. 2412115. Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. Foundation models were used as a creative partner in this work.  
+Please let us know if any typos or corrections are needed.
 
 
