@@ -23,6 +23,7 @@ header_pages:
   - advanced/index.md
   - references/index.md
   - external-link.md
+  - narrative-story.md
 
 # Collections
 collections:

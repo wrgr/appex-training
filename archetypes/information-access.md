@@ -53,7 +53,7 @@ resources: |
 ---
 
 <div class="expert-bio-box">
-  <img src="../assets/images/izzy-rossi.png" alt="Portrait of Izzy Rossi" class="expert-photo">
+  <img src="../assets/images/isabella-rossi.png" alt="Portrait of Izzy Rossi" class="expert-photo">
   <div class="expert-details">
     <h4>Meet the Expert: <strong>Izzy Rossi</strong></h4>
     <p>
