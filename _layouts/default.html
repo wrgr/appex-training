@@ -3,62 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/archetype.css' | relative_url }}">
+    <link rel="shortcut icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+    
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container">
-            <h1 class="site-title">
-                <i class="fas fa-virus"></i>
-                {{ site.title }}
-            </h1>
-            <p class="site-subtitle">{{ site.description }}</p>
+    <header>
+        <div class="logo">
+            <img src="{{ '/assets/images/appex-logo.png' | relative_url }}" alt="AppEx Logo">
         </div>
+        
+        <nav class="main-nav">
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="{{ '/' | relative_url }}"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="{{ '/archetypes/' | relative_url }}"><i class="fas fa-users"></i> Archetypes</a></li>
+                    <li><a href="{{ '/foundations/' | relative_url }}"><i class="fas fa-book"></i> Foundations</a></li>
+                    <li><a href="{{ '/advanced/' | relative_url }}"><i class="fas fa-flask"></i> Advanced</a></li>
+                    <li><a href="{{ '/resources/' | relative_url }}"><i class="fas fa-link"></i> Resources</a></li>
+                    <li><a href="https://outbreak-apex-game.web.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Zombies!</a></li>
+                    <li><a href="{{ '/narrative/' | relative_url }}"><i class="fas fa-feather-alt"></i> Narrative</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <!-- Navigation -->
-    <nav class="main-nav">
-        <div class="nav-container">
-            <ul class="nav-links">
-                <li><a href="{{ '/' | relative_url }}"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="{{ '/archetypes/' | relative_url }}"><i class="fas fa-users"></i> Archetypes</a></li>
-                <li><a href="{{ '/foundations/' | relative_url }}"><i class="fas fa-book"></i> Foundations</a></li>
-                
-                <li><a href="{{ '/advanced/' | relative_url }}"><i class="fas fa-flask"></i> Advanced</a></li>
-                
-                <li><a href="{{ '/resources/' | relative_url }}"><i class="fas fa-link"></i> Resources</a></li>
-                <li><a href="https://outbreak-apex-game.web.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Zombies!</a></li>
-                <li><a href="{{ '/narrative/' | relative_url }}"><i class="fas fa-feather-alt"></i> Narrative</a></li>
-            </ul>
-        </div>
-    </nav>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="main-content">
+    <main>
         {{ content }}
     </main>
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth' });
-                    }
-                });
-            });
-        });
-    </script>
+    <footer>
+        <p>&copy; 2024 AppEx. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>
