@@ -158,7 +158,7 @@ title: Pandemic Response Archetypes
     
     <div class="expert-card" data-domain="information">
       <div class="expert-image-container">
-        <img src="../assets/images/isabel-rossi.png" alt="Izzy Rossi" class="expert-image">
+        <img src="../assets/images/isabella-rossi.png" alt="Izzy Rossi" class="expert-image">
         <div class="expert-overlay">
           <i class="fas fa-broadcast-tower"></i>
         </div>

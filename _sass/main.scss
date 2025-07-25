@@ -3,7 +3,7 @@ $primary-color-sass: #2563eb;
 $secondary-teal-sass: #0d9488;
 
 :root {
-  /* Color Palette - Improved for better readability */
+  // Color Palette - Improved for better readability
   --primary-color: #{$primary-color-sass};
   --primary-blue: #{$primary-color-sass};
   --secondary-teal: #{$secondary-teal-sass};
@@ -16,7 +16,7 @@ $secondary-teal-sass: #0d9488;
   --danger-color: #dc2626;
   --danger-red: #dc2626;
   
-  /* Neutral colors - Enhanced contrast */
+  // Neutral colors - Enhanced contrast
   --gray-50: #f9fafb;
   --gray-100: #f3f4f6;
   --gray-200: #e5e7eb;
@@ -26,30 +26,30 @@ $secondary-teal-sass: #0d9488;
   --gray-800: #1f2937;
   --gray-900: #111827;
   
-  /* Typography */
+  // Typography
   --font-family-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-family-mono: 'JetBrains Mono', 'Monaco', 'Cascadia Code', monospace;
   --font-primary: var(--font-family-sans);
   --font-mono: var(--font-family-mono);
   
-  /* Text colors for better readability */
+  // Text colors for better readability
   --text-primary: #1f2937;
   --text-secondary: #374151;
   --text-muted: #6b7280;
   --text-inverse: #ffffff;
   
-  /* Background colors */
+  // Background colors
   --bg-primary: #ffffff;
   --bg-secondary: #f8fafc;
   --bg-tertiary: #f1f5f9;
   
-  /* Border and transitions */
+  // Border and transitions
   --border-color: #e5e7eb;
   --border-radius: 0.5rem;
   --border-radius-lg: 0.75rem;
   --transition: all 0.2s ease;
   
-  /* Spacing */
+  // Spacing
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 1rem;
@@ -57,7 +57,7 @@ $secondary-teal-sass: #0d9488;
   --space-xl: 2rem;
   --space-2xl: 3rem;
   
-  /* Shadows */
+  // Shadows
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -78,7 +78,7 @@ body {
   min-height: 100vh;
 }
 
-/* Header - FIXED READABILITY ISSUE */
+// Header - FIXED READABILITY ISSUE
 header {
   background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-teal) 100%);
   color: var(--text-inverse);
@@ -136,7 +136,7 @@ header {
   color: var(--text-inverse);
 }
 
-/* Navigation */
+// Navigation
 .main-nav {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -199,7 +199,7 @@ header {
   }
 }
 
-/* Main Content */
+// Main Content
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -207,7 +207,7 @@ main {
   min-height: calc(100vh - 200px);
 }
 
-/* Typography */
+// Typography
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.2;
@@ -249,7 +249,7 @@ p {
   font-size: 1rem;
 }
 
-/* Links */
+// Links
 a {
   color: var(--primary-color);
   text-decoration: none;
@@ -261,7 +261,7 @@ a {
   }
 }
 
-/* Lists */
+// Lists
 ul, ol {
   margin-bottom: 1rem;
   padding-left: 2rem;
@@ -273,7 +273,7 @@ ul, ol {
   }
 }
 
-/* NARRATIVE PAGE STYLES - Clean and minimal */
+// NARRATIVE PAGE STYLES - Clean and minimal
 .narrative-page {
   max-width: 800px;
   margin: 0 auto;
@@ -288,7 +288,6 @@ ul, ol {
     margin: var(--space-md);
   }
 
-  /* Remove all the crazy inline styles and use clean typography */
   h1 {
     font-size: 2.5rem;
     text-align: center;
@@ -340,7 +339,7 @@ ul, ol {
     line-height: 1.7;
     margin-bottom: 1.5rem;
     color: var(--text-secondary);
-    text-align: left; /* No more justified text - it's hard to read */
+    text-align: left;
   }
 
   strong {
@@ -353,7 +352,6 @@ ul, ol {
     font-style: italic;
   }
 
-  /* Clean up the reference lists */
   ol {
     margin: 2rem 0;
     
@@ -372,7 +370,6 @@ ul, ol {
     }
   }
 
-  /* Clean blockquotes */
   blockquote {
     background: var(--bg-secondary);
     border-left: 4px solid var(--primary-blue);
@@ -388,14 +385,14 @@ ul, ol {
   }
 }
 
-/* ARCHETYPE INDEX PAGE STYLES */
+// ARCHETYPE INDEX PAGE STYLES
 .archetype-index-page {
   max-width: 1200px;
   margin: 0 auto;
   padding: var(--space-lg);
 }
 
-/* Hero Section */
+// Hero Section
 .hero-section {
   background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-teal) 100%);
   color: var(--text-inverse);
@@ -472,7 +469,7 @@ ul, ol {
   }
 }
 
-/* Domains Explanation Section */
+// Domains Explanation Section
 .domains-explanation {
   background: var(--bg-primary);
   padding: 3rem;
@@ -541,7 +538,7 @@ ul, ol {
   }
 }
 
-/* Expert Team Section */
+// Expert Team Section
 .expert-team-section {
   background: var(--bg-primary);
   padding: 3rem;
@@ -591,13 +588,16 @@ ul, ol {
 
 .expert-image-container {
   position: relative;
-  height: 200px;
+  height: 240px; // Increased height to show more of the face
   overflow: hidden;
+  background: var(--bg-secondary); // Fallback background
 
   .expert-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center top; // Focus on the top/center of image where faces usually are
+    transition: var(--transition);
   }
 
   .expert-overlay {
@@ -619,8 +619,14 @@ ul, ol {
     }
   }
 
-  &:hover .expert-overlay {
-    opacity: 0.9;
+  &:hover {
+    .expert-overlay {
+      opacity: 0.9;
+    }
+    
+    .expert-image {
+      transform: scale(1.2); // Slight zoom on hover
+    }
   }
 }
 
@@ -667,40 +673,7 @@ ul, ol {
   }
 }
 
-/* Framework, Usage, and CTA sections */
-.framework-section,
-.usage-section,
-.cta-section {
-  background: var(--bg-primary);
-  padding: 3rem;
-  border-radius: var(--border-radius-lg);
-  margin: 3rem 0;
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--border-color);
-
-  h2 {
-    font-size: 2.2rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--text-primary);
-  }
-}
-
-.cta-section {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-teal) 100%);
-  color: var(--text-inverse);
-
-  h2 {
-    color: var(--text-inverse);
-  }
-
-  p {
-    color: var(--text-inverse);
-    opacity: 0.9;
-  }
-}
-
-/* Buttons */
+// Buttons
 .btn-primary {
   background: linear-gradient(135deg, var(--primary-blue), var(--secondary-teal));
   color: var(--text-inverse);
@@ -723,7 +696,7 @@ ul, ol {
   }
 }
 
-/* Code blocks */
+// Code blocks
 pre, code {
   font-family: var(--font-mono);
   background: var(--gray-100);
@@ -749,7 +722,7 @@ pre {
   }
 }
 
-/* Tables */
+// Tables
 table {
   width: 100%;
   border-collapse: collapse;
@@ -772,14 +745,14 @@ table {
   }
 }
 
-/* Images */
+// Images
 img {
   max-width: 100%;
   height: auto;
   border-radius: var(--border-radius);
 }
 
-/* Footer */
+// Footer
 footer {
   background: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
@@ -793,7 +766,7 @@ footer {
   }
 }
 
-/* Utility classes */
+// Utility classes
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -804,7 +777,7 @@ footer {
   }
 }
 
-/* Responsive design */
+// Responsive design
 @media (max-width: 768px) {
   .site-title {
     font-size: 2rem;
@@ -834,14 +807,12 @@ footer {
   }
 
   .domains-explanation,
-  .expert-team-section,
-  .framework-section,
-  .usage-section {
+  .expert-team-section {
     padding: 2rem;
   }
 }
 
-/* Animation */
+// Animation
 @keyframes fadeInUp {
   from {
     opacity: 0;
