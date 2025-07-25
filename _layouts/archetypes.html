@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="archetype-page">
     <!-- Breadcrumb -->
     <nav class="breadcrumb">
@@ -47,30 +46,31 @@ layout: default
             {% if page.concepts %}
                 {{ page.concepts | markdownify }}
             {% else %}
+                <h2>Core Concepts</h2>
                 <p>Core concepts content coming soon...</p>
             {% endif %}
         </div>
         
         <div id="notebook" class="tab-pane">
             <div class="notebook-section">
-                <h2><i class="fas fa-jupyter"></i> Interactive Jupyter Notebook</h2>
+                <h2><i class="fas fa-code"></i> Interactive Analysis</h2>
                 <p>{{ page.notebook_description | default: "Hands-on analysis and modeling exercises for this archetype." }}</p>
                 
                 <div class="notebook-actions">
                     <a href="{{ '/notebooks/' | append: page.notebook_file | relative_url }}" class="btn btn-primary">
                         <i class="fas fa-download"></i> Download Notebook
                     </a>
-                    <a href="https://colab.research.google.com/github/yourusername/appex-training/blob/main/notebooks/{{ page.notebook_file }}" class="btn btn-secondary">
+                    <a href="https://colab.research.google.com/github/wrgr/appex-training/blob/main/notebooks/{{ page.notebook_file }}" class="btn btn-secondary">
                         <i class="fab fa-google"></i> Open in Colab
                     </a>
-                    <a href="https://mybinder.org/v2/gh/yourusername/appex-training/main?filepath=notebooks/{{ page.notebook_file }}" class="btn btn-secondary">
+                    <a href="https://mybinder.org/v2/gh/wrgr/appex-training/main?filepath=notebooks/{{ page.notebook_file }}" class="btn btn-secondary">
                         <i class="fas fa-rocket"></i> Launch Binder
                     </a>
                 </div>
                 
                 {% if page.notebook_preview %}
                 <div class="notebook-preview">
-                    <h3>Notebook Preview</h3>
+                    <h3>What You'll Learn</h3>
                     {{ page.notebook_preview | markdownify }}
                 </div>
                 {% endif %}
@@ -87,3 +87,41 @@ layout: default
         </div>
     </div>
 </div>
+
+<!-- Tab functionality script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tabLinks = document.querySelectorAll('.tab-link');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+    
+    tabLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetTab = this.getAttribute('data-tab');
+            
+            // Remove active classes
+            tabLinks.forEach(l => l.classList.remove('active'));
+            tabPanes.forEach(p => p.classList.remove('active'));
+            
+            // Add active classes
+            this.classList.add('active');
+            const targetPane = document.getElementById(targetTab);
+            if (targetPane) {
+                targetPane.classList.add('active');
+            }
+            
+            // Update URL
+            history.replaceState(null, null, '#' + targetTab);
+        });
+    });
+    
+    // Handle initial hash
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+        const targetLink = document.querySelector(`[data-tab="${hash}"]`);
+        if (targetLink) {
+            targetLink.click();
+        }
+    }
+});
+</script>

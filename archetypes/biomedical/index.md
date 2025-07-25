@@ -12,7 +12,7 @@ notebook_description: Build epidemiological models to predict disease spread. An
 ```
 
 <div class="expert-bio-box">
-  <img src="../../assets/images/dr-beatrice-chen.png" alt="Portrait of Dr. Beatrice Chen" class="expert-photo">
+  <img src="../../assets/images/beatrice-chen.png" alt="Portrait of Dr. Beatrice Chen" class="expert-photo">
   <div class="expert-details">
     <h4>Meet the Expert: <strong>Dr. Beatrice Chen</strong></h4>
     <p>
