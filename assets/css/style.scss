@@ -48,6 +48,44 @@ $dark-mode-text-secondary: #cbd5e1;
   --transition: all 0.2s ease-in-out;
 }
 
+/* Expert Bio Box Styling */
+.expert-bio-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #f7f9fa; /* A light background color */
+  border-left: 5px solid #007bff; /* An accent color */
+  padding: 20px;
+  margin: 30px 0; /* Adds space above and below the box */
+  border-radius: 8px;
+}
+
+.expert-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* Makes the photo circular */
+  object-fit: cover; /* Prevents the image from being distorted */
+}
+
+.expert-details h4 {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+.expert-details p {
+  margin-bottom: 0;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+  .expert-bio-box {
+    flex-direction: column; /* Stack image and text vertically */
+    text-align: center;
+  }
+}
+
 // Dark mode
 @media (prefers-color-scheme: dark) {
   :root {
