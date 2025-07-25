@@ -43,7 +43,7 @@ defaults:
       path: "archetypes"
       type: "pages"
     values:
-      layout: "archetype"
+      layout: "archetypes"
   - scope:
       path: "notebooks"
       type: "pages"
