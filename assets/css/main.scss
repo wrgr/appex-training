@@ -90,41 +90,52 @@ header {
 }
 
 
-// --- Hero Section Styles ---
+/* --- Hero Section & Card Grid --- */
 
 .hero {
   display: grid;
-  place-items: center; // This vertically and horizontally centers the content
-  padding: 50px 20px;
-  background-color: #e9ecef; // A light grey background for the hero area
+  place-items: center; /* This vertically and horizontally centers the content */
+  padding: 40px 20px;
+  background-color: #f8f9fa; /* A light background for the hero area */
   text-align: center;
 }
 
 .hero-card {
   width: 100%;
-  max-width: 800px; // Adjust max-width as needed
+  max-width: 800px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 30px;
   
-  // Flexbox to fix the "dead space" inside the card
+  /* Flexbox to fix the "dead space" inside the card */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 300px; // Ensures the card has a minimum height
+  min-height: 250px; /* Ensures the card has a minimum height */
 }
 
-.hero-card h1, .hero-card h2 {
+.hero-card h1 {
     margin-top: 0;
 }
 
 .hero-card .card-content {
-  flex-grow: 1; // Allows the text block to grow
+  flex-grow: 1; /* Allows the text block to grow and fill empty space */
 }
 
 .hero-card .card-action {
-    margin-top: 20px; // Adds space above the button/link
+    margin-top: 20px; /* Adds space above the button/link */
+}
+
+
+/* --- Grid for the smaller cards --- */
+
+.card-grid {
+  display: grid;
+  /* This creates a responsive row of cards */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* This adds space between the cards */
+  padding: 20px;
 }
 
 // --- Narrative Page Styles ---
