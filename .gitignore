@@ -1,1 +1,5 @@
 /archetypes/archive
+
+# Build output
+_site/
+

@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+For a quick overview see [Start Here](/start-here/).
+
 
 <style>
 /* Enhanced styles for the pandemic science guide */
@@ -548,3 +550,5 @@ layout: default
 <section class="nsf-acknowledgment">
     <p><strong>Acknowledgment:</strong> This material is based upon work supported by the National Science Foundation under Award No. 2412115. Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.</p>
 </section>
+
+Open our Jupyter notebooks in [Binder](https://mybinder.org/v2/gh/wrgr/appex-training/HEAD?labpath=notebooks/).

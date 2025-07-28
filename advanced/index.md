@@ -360,3 +360,6 @@ Real-time pathogen evolution tracking:
 ---
 
 *This  APPEX training guide creates a comprehensive educational framework for developing the next generation of pandemic science professionals. By integrating foundational knowledge with practical skills and emphasizing interdisciplinary collaboration, we prepare students to prevent, detect, and respond to future health emergencies through evidence-based, equity-focused approaches.*
+## Next Steps
+
+Return to the [Foundations](/foundations/) modules or browse our [Resources](/resources/) for further reading.

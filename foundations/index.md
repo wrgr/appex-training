@@ -1287,3 +1287,7 @@ title: Foundation Modules
 </div>
 
 <!-- Add your next sections here -->
+
+## Next Steps
+
+Continue with the [Advanced Topics](/advanced/) section or explore additional [Resources](/resources/).

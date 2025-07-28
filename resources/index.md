@@ -395,3 +395,7 @@ This is the original 1798 essay where Thomas Malthus argued that population grow
 
 **Taylor, B. Dark green religion.**
 This book explores a type of environmentalism that can become religious or apocalyptic in its fervor, providing a name for the villains' extremist ideology.
+
+## Explore More
+
+Check out the [Foundations](/foundations/) and [Advanced Topics](/advanced/) sections for in-depth material.

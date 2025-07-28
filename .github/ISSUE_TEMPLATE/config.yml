@@ -1,0 +1,4 @@
+defaults:
+  - label: enhancement
+    assignees:
+      - wrgr
