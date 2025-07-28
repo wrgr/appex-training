@@ -472,36 +472,36 @@ title: Foundation Modules
     .hero-section {
         padding: 3rem 1.5rem;
     }
-    
+
     .page-title {
         font-size: 2.2rem;
     }
-    
+
     .content-wrapper {
         padding: 2rem;
         margin: 1rem 0;
     }
-    
+
     .module-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .examples-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .stats-highlight {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
-    
+
     .timeline {
         padding-left: 2rem;
     }
-    
+
     .timeline::before {
         left: 0.5rem;
     }
-    
+
     .timeline-item::before {
         left: -1.5rem;
     }
@@ -513,16 +513,16 @@ title: Foundation Modules
         background: #1a1a1a;
         color: #e2e8f0;
     }
-    
+
     .section {
         background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
     }
-    
+
     .subsection {
         background: #2d3748;
         color: #e2e8f0;
     }
-    
+
     .example-card {
         background: rgba(59, 130, 246, 0.2);
         color: #e2e8f0;
@@ -534,7 +534,7 @@ title: Foundation Modules
 <section class="hero-section">
     <h1 class="page-title">🧬 Foundation Modules</h1>
     <p class="page-subtitle">Essential concepts and tools for understanding pandemic science</p>
-    
+
     <div class="module-grid">
         <div class="module-card">
             <div class="module-number">2.1</div>
@@ -570,7 +570,7 @@ title: Foundation Modules
 </section>
 
 <div class="content-wrapper">
-    
+
     ## Part 2: Foundational Science Modules
 
     <div class="section">
@@ -579,7 +579,7 @@ title: Foundation Modules
 
         <div class="subsection">
             <h4>🎯 Understanding Basic Reproduction Number (R₀)</h4>
-            
+
             <p>The basic reproduction number is perhaps the most important concept in epidemic science. It answers the question: <strong>"In a completely susceptible population, how many people will one infected person infect on average?"</strong></p>
 
             <div class="formula-box">
@@ -631,7 +631,7 @@ title: Foundation Modules
 
             <h5>Effective Reproduction Number (Rt)</h5>
             <p>While R₀ assumes everyone is susceptible, Rt reflects reality:</p>
-            
+
             <div class="formula-box">
                 Rt = R₀ × (fraction of population still susceptible)
             </div>
@@ -646,7 +646,7 @@ title: Foundation Modules
 
         <div class="subsection">
             <h4>📈 Attack Rate and Population Impact</h4>
-            
+
             <div class="formula-box">
                 Attack rate = (Number of people who became ill) / (Number of people at risk) × 100
             </div>
@@ -680,7 +680,7 @@ title: Foundation Modules
 
         <div class="subsection">
             <h4>💀 Case Fatality Rate (CFR) vs. Infection Fatality Rate (IFR)</h4>
-            
+
             <p>This distinction became crucial during COVID-19:</p>
 
             <div class="concept-box">
@@ -712,7 +712,7 @@ title: Foundation Modules
 
         <div class="subsection">
             <h4>🛡️ Herd Immunity Threshold</h4>
-            
+
             <div class="formula-box">
                 <strong>Formula:</strong> HIT = 1 - (1/R₀)
             </div>
@@ -750,7 +750,7 @@ title: Foundation Modules
 
         <div class="subsection">
             <h4>🔄 Epidemic Progression Framework: From Infection to Pandemic</h4>
-            
+
             <p>Understanding how diseases escalate helps us know when and how to respond:</p>
 
             <div class="timeline">
@@ -761,7 +761,7 @@ title: Foundation Modules
                         <br><strong>Example:</strong> First COVID-19 cases in Wuhan (December 2019)
                     </div>
                 </div>
-                
+
                 <div class="timeline-item">
                     <div class="timeline-year">Stage 2: Outbreak</div>
                     <div class="timeline-content">
@@ -769,7 +769,7 @@ title: Foundation Modules
                         <br><strong>Example:</strong> SARS outbreak in Amoy Gardens, Hong Kong (2003)
                     </div>
                 </div>
-                
+
                 <div class="timeline-item">
                     <div class="timeline-year">Stage 3: Epidemic</div>
                     <div class="timeline-content">
@@ -777,7 +777,7 @@ title: Foundation Modules
                         <br><strong>Example:</strong> MERS-CoV outbreak in South Korea (2015)
                     </div>
                 </div>
-                
+
                 <div class="timeline-item">
                     <div class="timeline-year">Stage 4: Pandemic</div>
                     <div class="timeline-content">
@@ -799,7 +799,7 @@ title: Foundation Modules
 
         <div class="subsection">
             <h4>📊 Epidemic Curve Analysis: Reading the Story of an Outbreak</h4>
-            
+
             <p>Epidemic curves (epi curves) show the number of cases over time and reveal the outbreak's source and transmission pattern.</p>
 
             <div class="concept-box">
@@ -838,7 +838,7 @@ title: Foundation Modules
 
         <div class="subsection">
             <h4>🌍 Seasonal Patterns and Disease Emergence</h4>
-            
+
             <div class="examples-grid">
                 <div class="example-card">
                     <strong>Respiratory Disease Seasonality</strong>
@@ -862,7 +862,7 @@ title: Foundation Modules
 
         <div class="subsection">
             <h4>📐 The SIR Model: Foundation of Epidemic Modeling</h4>
-            
+
             <p>Developed by Kermack and McKendrick in 1927, the SIR model remains the foundation of epidemic modeling.</p>
 
             <div class="concept-box">
@@ -909,7 +909,7 @@ title: Foundation Modules
 
         <div class="subsection">
             <h4>🔄 SEIR Model: Adding Realism with Incubation Period</h4>
-            
+
             <p>Many diseases have an incubation period where individuals are infected but not yet infectious.</p>
 
             <div class="concept-box">
@@ -937,7 +937,7 @@ title: Foundation Modules
 
         <div class="subsection">
             <h4>🚀 Model Extensions and Modern Applications</h4>
-            
+
             <div class="examples-grid">
                 <div class="example-card">
                     <strong>SIRS Model</strong>
@@ -981,7 +981,7 @@ title: Foundation Modules
             <h4 class="case-study-title">🦠 Spanish Flu (1918-1920): Lessons in Pandemic Response</h4>
             <div class="case-study-content">
                 <p>The 1918 influenza pandemic remains the most devastating pandemic in recorded history, offering crucial lessons for modern pandemic preparedness.</p>
-                
+
                 <div class="stats-highlight">
                     <div class="stat-item">
                         <div class="stat-value">500M</div>
@@ -1012,7 +1012,7 @@ title: Foundation Modules
             <h4 class="case-study-title">🔬 SARS (2003): Success Story in Global Coordination</h4>
             <div class="case-study-content">
                 <p>The SARS outbreak demonstrated how international cooperation and modern public health tools could contain a novel pathogen.</p>
-                
+
                 <div class="stats-highlight">
                     <div class="stat-item">
                         <div class="stat-value">8,098</div>
@@ -1047,7 +1047,7 @@ title: Foundation Modules
             <h4 class="case-study-title">🌍 COVID-19 (2019-present): The Modern Pandemic</h4>
             <div class="case-study-content">
                 <p>The ongoing COVID-19 pandemic has tested every aspect of global pandemic preparedness and response.</p>
-                
+
                 <div class="stats-highlight">
                     <div class="stat-item">
                         <div class="stat-value">700M+</div>
@@ -1095,7 +1095,7 @@ title: Foundation Modules
 
         <div class="subsection">
             <h4>🌐 Global Surveillance Networks</h4>
-            
+
             <div class="examples-grid">
                 <div class="example-card">
                     <strong>WHO GOARN</strong>
@@ -1128,7 +1128,7 @@ title: Foundation Modules
 
         <div class="subsection">
             <h4>📱 Digital Epidemiology Revolution</h4>
-            
+
             <div class="concept-box">
                 <h5>Syndromic Surveillance</h5>
                 <p>Real-time monitoring of health indicators before laboratory confirmation. Examples include hospital emergency department surveillance, influenza-like illness tracking, and analysis of drug sales patterns.</p>
@@ -1157,7 +1157,7 @@ title: Foundation Modules
 
         <div class="subsection">
             <h4>📲 Mobile Health Technologies</h4>
-            
+
             <div class="examples-grid">
                 <div class="example-card">
                     <strong>Contact Tracing Apps</strong>
@@ -1181,7 +1181,7 @@ title: Foundation Modules
 
         <div class="subsection">
             <h4>🌳 Environmental Drivers of Pandemic Risk</h4>
-            
+
             <div class="concept-box">
                 <h5>Deforestation and Habitat Destruction</h5>
                 <p><strong>The Spillover Connection:</strong> 75% of emerging infectious diseases are zoonotic. Habitat destruction forces wildlife into human contact, with tropical regions being hotspots due to high biodiversity and deforestation rates.</p>
@@ -1218,7 +1218,7 @@ title: Foundation Modules
 
         <div class="subsection">
             <h4>🏙️ Urbanization and Megacity Challenges</h4>
-            
+
             <div class="concept-box">
                 <h5>Urban Disease Transmission</h5>
                 <p>Population density facilitates respiratory disease spread. Transportation hubs serve as mixing points. Informal settlements have poor sanitation and crowded conditions. Air pollution increases respiratory disease susceptibility.</p>
@@ -1256,7 +1256,7 @@ title: Foundation Modules
 
         <div class="subsection">
             <h4>🌐 Globalization and Connectivity</h4>
-            
+
             <div class="examples-grid">
                 <div class="example-card">
                     <strong>Transportation Networks</strong>

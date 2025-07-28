@@ -389,38 +389,38 @@ layout: default
     .hero-section {
         padding: 3rem 1.5rem;
     }
-    
+
     .section-title {
         font-size: 2.2rem;
     }
-    
+
     .content-wrapper {
         padding: 2rem;
         margin: 1rem 0;
     }
-    
+
     .stats-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 1rem;
     }
-    
+
     .components-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .appex-logo {
         max-width: 250px;
     }
-    
+
     .logo-section {
         padding: var(--space-lg);
         margin: var(--space-lg) 0;
     }
-    
+
     .contact-info {
         font-size: 1rem;
     }
-    
+
     .nsf-acknowledgment {
         font-size: 0.9rem;
         padding: var(--space-md);
@@ -433,11 +433,11 @@ layout: default
         background: #1a1a1a;
         color: #e2e8f0;
     }
-    
+
     .subsection {
         background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
     }
-    
+
     .section-intro {
         background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
     }
@@ -454,7 +454,7 @@ layout: default
         <h3>The Driving Question</h3>
         <p>What allows a few isolated cases of an infectious disease to blossom into an outbreak and further expand into a true pandemic?</p>
     </div>
-    
+
     <div class="stats-grid">
         <div class="stat-card">
             <div class="stat-number">6</div>
@@ -484,14 +484,14 @@ layout: default
     <div class="subsection">
         <h3 data-icon="🎯">The Driving Question</h3>
         <p>The Center for Analysis and Prediction of Pandemic Expansion (APPEX) is built around a single, critical question: <strong>What allows a few isolated cases of an infectious disease to blossom into an outbreak and further expand into a true pandemic?</strong></p>
-        
+
         <p>The answer is never simple. It's not just about the biology of a virus; it's a "perfect storm" scenario where numerous factors—biological, environmental, social, and economic—interact in complex and often unpredictable ways. The APPEX Center's core mission is to dismantle the traditional silos that separate scientific disciplines, creating a new, integrated approach to pandemic science.</p>
     </div>
 
     <div class="subsection">
         <h3 data-icon="🔗">The Failure of Silos</h3>
         <p>Historically, pandemic research has been discipline-specific. Virologists studied viruses, economists studied economic impacts, and sociologists studied human behavior. While valuable, this isolated approach misses the crucial synergies between risk factors.</p>
-        
+
         <div class="example-box">
             <h4>🌟 Real-World Examples of Interconnected Risks:</h4>
             <ul class="example-list">
@@ -500,14 +500,14 @@ layout: default
                 <li>A government's initial response is slowed by economic concerns (Economic), allowing the pathogen to become established and spread globally.</li>
             </ul>
         </div>
-        
+
         <p>The APPEX Center operates on the principle that the greatest breakthroughs will be found at the interfaces between disciplines.</p>
     </div>
 
     <div class="subsection">
         <h3 data-icon="🗺️">How to Use This Guide</h3>
         <p>This guide is designed for college-level students and aspiring researchers. It is structured around six core "Expert Archetypes," representing the key domains of knowledge essential for understanding pandemic risk.</p>
-        
+
         <div class="guide-components">
             <h4>📚 For each archetype, you will find:</h4>
             <div class="components-grid">
