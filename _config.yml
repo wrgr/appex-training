@@ -5,7 +5,7 @@ baseurl: "/appex-training"
 
 remote_theme: pages-themes/tactile@v0.2.0
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-remote-theme
 
 # Build settings
 markdown: kramdown
@@ -15,15 +15,18 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-lunr-js-search
 
 # Navigation
 header_pages:
-  - foundation/index.md
+  - start-here.md
+  - search.md
+  - foundations/index.md
   - archetypes/index.md
   - advanced/index.md
-  - references/index.md
+  - resources/index.md
   - external-link.md
-  - narrative-story.md
+  - narrative/index.md
 
 # Collections
 collections:
